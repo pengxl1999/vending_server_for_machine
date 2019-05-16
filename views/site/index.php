@@ -12,7 +12,7 @@ $this->title = 'Vending Machine';
 
         <p class="lead">您可以通过说出药品信息来查询药品！点击立即购买以开始。</p>
 
-        <p><a class="btn btn-lg btn-success" href="./index.php?r=buy%2Findex">立即购买</a></p>
+        <p><a class="btn btn-lg btn-success" href="./index.php?r=buy%2Findex" onclick="window.android.askForMedicineName()">立即购买</a></p>
     </div>
 
     <div class="body-content">
