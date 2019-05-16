@@ -19,8 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <br/>
-    <form action="./index.php?r=buy/index" method="post">
-        <input type="text" name="search_med" placeholder="搜索药品" style="font-size: medium"/>
+    <form id='search_form' action="./index.php?r=buy/index" method="post">
+        <input type="text" name="search_med" id='search_med' placeholder="搜索药品" style="font-size: medium" value=""/>
         <input type="submit" value="搜索" class="btn btn-primary" />
     </form>
 
@@ -120,3 +120,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 </div>
+
+<script>
+    function searchMedicineByVoice(arg) {
+        var form = document.getElementById('search_form');
+        var med = document.getElementById('search_med');
+        med.value = arg;
+        form.submit();
+    }
+</script>
