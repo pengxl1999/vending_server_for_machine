@@ -14,6 +14,9 @@ $this->title = '购买药品';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="medicine-index">
+    <p>
+        <?= Html::a('返回', ['site/index'], ['class' => 'btn btn-primary', 'style' => 'font-size: large']) ?>
+    </p>
 
     <h1><strong style="font-size: xx-large"><?= Html::encode($this->title) ?></strong></h1>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
