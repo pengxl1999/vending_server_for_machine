@@ -15,13 +15,13 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="medicine-index">
 
-    <h1><strong style="font-size: large"><?= Html::encode($this->title) ?></strong></h1>
+    <h1><strong style="font-size: xx-large"><?= Html::encode($this->title) ?></strong></h1>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <br/>
     <form id='search_form' action="./index.php?r=buy/index" method="post">
-        <input type="text" name="search_med" id='search_med' placeholder="搜索药品" style="font-size: medium" value=""/>
-        <input type="submit" value="搜索" class="btn btn-primary" />
+        <input type="text" name="search_med" id='search_med' placeholder="搜索药品" style="font-size: large" value=""/>
+        <input type="submit" value="搜索" class="btn btn-primary" style="font-size:large; margin-left: 15px" />
     </form>
 
     <br/>
@@ -29,27 +29,27 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         // 'filterModel' => $searchModel,
+        'rowOptions' => ['height' => '200'],
         'columns' => [
             //['class' => 'yii\grid\SerialColumn'],
-
             //'m_id',
             [
                 'label' => '图片',
                 'enableSorting' => false,
                 'format' => 'raw',
                 'value' => function($model) {
-                    return Html::img('images/medicine/'.$model->img, ['alt' => $model->name, 'width' => '80']);
+                    return Html::img('images/medicine/'.$model->img, ['alt' => $model->name, 'width' => '150']);
                 },
-                'headerOptions' => ['style' => 'text-align:center', 'width' => '80'],
-                'contentOptions' => ['align' => 'center', 'width' => '80'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large', 'width' => '150'],
+                'contentOptions' => ['align' => 'center', 'width' => '150', 'style' => 'font-size:x-large'],
             ],
             //'img',
             [
                 'header' => "名称",
                 'class' => 'yii\grid\ActionColumn',
                 'template'=> '{name}',
-                'headerOptions' => ['style' => 'text-align:center'],
-                'contentOptions' => ['align' => 'center'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large'],
                 'buttons' => [
                     'name' => function ($url, $model) {
                         //$_SESSION['medId'] = $model->m_id;
@@ -63,8 +63,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($model) {
                     return $model->symptom;
                 },
-                'headerOptions' => ['style' => 'text-align:center'],
-                'contentOptions' => ['align' => 'center'],  
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large'],
             ],
             //'name',
             //'commodity_name',
@@ -90,8 +90,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($model) {
                     return $model->money;
                 },
-                'headerOptions' => ['style' => 'text-align:center', 'width' => '60'],
-                'contentOptions' => ['align' => 'center', 'width' => '60'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large', 'width' => '100'],
+                'contentOptions' => ['align' => 'center', 'width' => '100', 'style' => 'font-size:x-large'],
             ],
             //'money',
 
@@ -100,19 +100,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'header' => "购买",
                 'class' => 'yii\grid\ActionColumn',
                 'template'=> '{buyNow}{addToCart}',
-                'headerOptions' => ['style' => 'text-align:center', 'width' => '50'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
                 'contentOptions' => ['align' => 'center', 'width' => '50'],
                 'buttons' => [
                     'buyNow' => function ($url, $model) {
-                        //$_SESSION['medId'] = $model->m_id;
                         return Html::a('立即购买', ['buy/cart', 'medId' => $model->m_id], ['class' => "btn btn-sm btn-success",
-                            'style' => 'font-size:x-small']);
+                            'style' => 'font-size:x-large']);
                     },
-                    'addToCart' => function ($url, $model) {
-                        //$_SESSION['medId'] = $model->m_id;
-                        return Html::a('加入购物车', ['buy/index', 'medId' => $model->m_id], ['class' => "btn btn-sm btn-info",
-                            'style' => 'font-size:x-small; margin-top:5px']);
-                    }
                 ],
             ],
         ],

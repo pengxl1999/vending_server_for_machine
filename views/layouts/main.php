@@ -38,11 +38,11 @@ AppAsset::register($this);
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right', 'style' => 'font-size: large'],
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
             ['label' => '售货机信息', 'url' => ['/vem/index']],
-            ['label' => '购买药品', 'url' => ['/buy/index']],
+            ['label' => '购买药品', 'url' => ['/buy/index'], 'onclick' => 'window.android.askForMedicineName()'],
             /*['label' => '购买药品', 'url' => ['/buy/index&userId='
                 . Yii::$app->user->identity->username .
                 '&medId=']],*/
@@ -51,7 +51,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container" style="font-size: medium">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
