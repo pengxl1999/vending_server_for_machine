@@ -42,7 +42,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
             ['label' => '售货机信息', 'url' => ['/vem/index']],
-            ['label' => '购买药品', 'url' => ['/buy/index'], 'onclick' => '"window.android.askForMedicineName()"'],
+            ['label' => '购买药品', 'url' => ['/buy/index'], 'onclick' => "window.android.askForMedicineName()"],
             /*['label' => '购买药品', 'url' => ['/buy/index&userId='
                 . Yii::$app->user->identity->username .
                 '&medId=']],*/
