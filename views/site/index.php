@@ -21,9 +21,7 @@ $this->title = 'Vending Machine';
             <div class="col-lg-4">
                 <h2>使用方法</h2>
 
-                <p>点击立即购买进入购买界面，此时机器会询问您所需要购买的药品。在机器提问完毕后，您可以说出
-                需要购买的药品信息，包括但不限于学名、别名、英文名、适应症。稍等片刻，屏幕上将会显示您所需要
-                的药品。如果您对识别结果不够满意，您还可以通过手动输入药品名称来进行搜索。</p>
+                <p>点击立即购买进入购买界面，此时机器会询问您所需要购买的药品。在机器提问完毕后，您可以说出需要购买的药品信息，包括但不限于学名、别名、英文名、适应症。稍等片刻，屏幕上将会显示您所需要的药品。如果您对识别结果不够满意，您还可以通过手动输入药品名称来进行搜索。</p>
 
                 <p><a class="btn btn-default" href="">详细信息 &raquo;</a></p>
             </div>
@@ -35,7 +33,7 @@ $this->title = 'Vending Machine';
                 <p><a class="btn btn-default" onclick="window.android.backToMenu()">返回菜单 &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>关于我们</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
