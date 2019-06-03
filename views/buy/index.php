@@ -107,7 +107,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'contentOptions' => ['align' => 'center', 'width' => '50', 'style' => 'vertical-align: middle'],
                 'buttons' => [
                     'buyNow' => function ($url, $model) {
-                        return Html::a('立即购买', ['buy/cart', 'medId' => $model->m_id], ['class' => "btn btn-sm btn-success",
+                        return Html::a('立即购买', ['buy/pay', 'medId' => $model->m_id], ['class' => "btn btn-sm btn-success",
                             'style' => 'font-size:x-large']);
                     },
                 ],

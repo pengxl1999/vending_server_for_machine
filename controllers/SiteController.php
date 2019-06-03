@@ -82,13 +82,9 @@ class SiteController extends Controller
 
     }*/
 
-//    public function actionCart($userId, $medId)
-//    {
-//        $CustomerPurchase = CustomerPurchase::findOne($userId);
-//        $cart = new CustomerCar();
-//        $cart['cc_id'] = $CustomerPurchase['cp_id'];
-//        $cart['c_id'] = $userId;        //用户id
-//        $cart['cc_medicine'] = $medId;      //药品id
-//        return $this->render('cart', ['model' => $cart]);
-//    }
+    public function actionError($message) {
+        return $this->render('error', [
+            'message' => $message
+        ]);
+    }
 }

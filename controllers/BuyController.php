@@ -78,62 +78,21 @@ class BuyController extends Controller
     }
 
     /**
-     * 我的购物车
-     * @param int $medId
-     * @param int $operation
-     * @return string|Response
-     * @throws \Throwable
-     * @throws \yii\db\StaleObjectException
+     * 支付
+     * @return string
      */
-    public function actionCart($medId = -1, $operation = -1)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
+    public function actionPay()    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
     {
         self::$money = 0;
         //self::$isUploaded = false;
-        if($operation !== -1) {
-            switch ($operation) {
-                case 0:
-                    $cart = CustomerCar::findOne([
-                        'c_id' => $_SESSION['userId'],
-                        'cc_medicine' => $medId,
-                    ]);
-                    $cart->cc_num++;
-                    $cart->save();
-                    break;
-                case 1:
-                    $cart = CustomerCar::findOne([
-                            'c_id' => $_SESSION['userId'],
-                            'cc_medicine' => $medId,
-                    ]);
-                    $cart->cc_num--;
-                    if($cart->cc_num === 0) {
-                        $cart->delete();
-                    } else {
-                        $cart->save();
-                    }
-                    break;
-                case 2:
-                    $cart = CustomerCar::findOne([
-                        'c_id' => $_SESSION['userId'],
-                        'cc_medicine' => $medId,
-                    ]);
-                    $cart->delete();
 
-                    break;
-                default:
-                    break;
-            }
-        }
-        else if($medId !== -1) {
-            $this->addMedToCart($medId);
-        }
-
-        $searchModel = new CustomerCarSearch();
+        //$searchModel = new CustomerCarSearch();
         //$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $dataProvider = $searchModel->searchByUser($_SESSION['userId']);
+        //$dataProvider = $searchModel->searchByUser($_SESSION['userId']);
 
-        return $this->render('cart', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+        return $this->render('pay', [
+            //'searchModel' => $searchModel,
+            //'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -149,34 +108,9 @@ class BuyController extends Controller
     }
 
     /**
-     * 选择地址
-     * @param $cart
-     * @param $mMoney
-     * @param bool $isUploaded
-     * @return string|Response
+     * 增加药品
+     * @param $medId
      */
-    public function actionAddr($cart, $mMoney, $isUploaded = false) {     //支付页面， cart == -1 ? 全部购买 : 只购买cart
-        if($mMoney == 0) {     //总金额为0，不进行操作
-            return $this->redirect(['cart']);
-        }
-        self::$isUploaded = $isUploaded;
-        if($cart == -1) {
-            $searchModel = new CustomerCarSearch();
-            $dataProvider = $searchModel->searchByUser($_SESSION['userId']);    //购买信息provider
-        } else {
-            $searchModel = new CustomerCarSearch();
-            $dataProvider = $searchModel->searchById($cart);
-        }
-        $searchModel = new VemSearch();
-        $dataProvider1 = $searchModel->search(Yii::$app->request->queryParams);
-        return $this->render('addr', [
-            'mMoney' => $mMoney,
-            'dataProvider' => $dataProvider,
-            'dataProvider1' => $dataProvider1,
-            'searchModel' => $searchModel,
-        ]);
-    }
-
     public function addMedToCart($medId) {
         if(($cart = CustomerCar::findOne([
             'c_id' => $_SESSION['userId'],
