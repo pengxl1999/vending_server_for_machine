@@ -3,6 +3,7 @@
 
 namespace app\controllers;
 
+use app\models\BuyStatus;
 use app\models\CustomerCar;
 use app\models\CustomerCarSearch;
 use app\models\CustomerPurchase;
@@ -78,21 +79,25 @@ class BuyController extends Controller
     }
 
     /**
-     * 支付
+     * 确认购买
+     * @param $medId
+     * @param $num
+     * @param $isUploaded
      * @return string
      */
-    public function actionPay()    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
+    public function actionConfirm($medId, $num = 1, $isUploaded = false)
     {
-        self::$money = 0;
-        //self::$isUploaded = false;
+        BuyStatus::$hasRx = false;
+        BuyStatus::$isUploaded = $isUploaded;
+        $medicine = Medicine::findOne(['m_id' => $medId]);
 
-        //$searchModel = new CustomerCarSearch();
-        //$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        //$dataProvider = $searchModel->searchByUser($_SESSION['userId']);
+        if($medicine->type === 1) {
+            BuyStatus::$hasRx = true;
+        }
 
-        return $this->render('pay', [
-            //'searchModel' => $searchModel,
-            //'dataProvider' => $dataProvider,
+        return $this->render('confirm', [
+            'medicine' => $medicine,
+            'num' => $num,
         ]);
     }
 

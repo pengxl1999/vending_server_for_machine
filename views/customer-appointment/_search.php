@@ -17,13 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'ca_id') ?>
 
+    <?= $form->field($model, 'ca_order') ?>
+
     <?= $form->field($model, 'c_id') ?>
 
     <?= $form->field($model, 'm_id') ?>
 
     <?= $form->field($model, 'ca_time') ?>
 
-    <?= $form->field($model, 'status') ?>
+    <?php // echo $form->field($model, 'status') ?>
 
     <?php // echo $form->field($model, 'v_id') ?>
 
@@ -34,6 +36,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'img') ?>
 
     <?php // echo $form->field($model, 'pa_id') ?>
+
+    <?php // echo $form->field($model, 'money') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

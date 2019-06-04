@@ -2,12 +2,12 @@
 
 namespace app\models;
 
-use app\models\Medicine;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
+use app\models\Medicine;
 
 /**
- * MedicineSearch represents the model behind the search form of `app\models\Medicine`.
+ * MedicineSearch represents the model behind the search form of `\app\models\Medicine`.
  */
 class MedicineSearch extends Medicine
 {
@@ -18,9 +18,7 @@ class MedicineSearch extends Medicine
     {
         return [
             [['m_id', 'type', 'number', 'guarantee', 'fomulation', 'brand', 'manufacturer'], 'integer'],
-            [['name', 'commodity_name', 'common_name', 'other_name', 'english_name', 'composition', 'usage', 'symptom', 'attention', 'interaction', 'dose', 'cert',
-                //'img'
-            ], 'safe'],
+            [['name', 'commodity_name', 'common_name', 'other_name', 'english_name', 'composition', 'usage', 'symptom', 'attention', 'interaction', 'dose', 'cert', 'img'], 'safe'],
             [['money'], 'number'],
         ];
     }
@@ -44,6 +42,7 @@ class MedicineSearch extends Medicine
     public function search($params)
     {
         $query = Medicine::find();
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -87,25 +86,13 @@ class MedicineSearch extends Medicine
         return $dataProvider;
     }
 
-    public function searchByParams($params)
-    {
+    public function searchByParams($params) {
         $query = Medicine::find();
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-        ]);
-
-        // grid filtering conditions
-        $query->orFilterWhere([
-            'm_id' => $params,
-            'type' => $params,
-            'number' => $params,
-            'guarantee' => $params,
-            'fomulation' => $params,
-            'brand' => $params,
-            'manufacturer' => $params,
-            'money' => $params,
         ]);
 
         $query->orFilterWhere(['like', 'name', $params])
@@ -120,7 +107,9 @@ class MedicineSearch extends Medicine
             ->orFilterWhere(['like', 'interaction', $params])
             ->orFilterWhere(['like', 'dose', $params])
             ->orFilterWhere(['like', 'cert', $params])
-            ->orFilterWhere(['like', 'img', $params]);
+            ->orFilterWhere(['like', 'img', $params])
+            ->orFilterWhere(['like', 'brand', $params])
+            ->orFilterWhere(['like', 'manufacturer', $params]);
 
         return $dataProvider;
     }

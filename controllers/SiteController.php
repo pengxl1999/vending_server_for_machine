@@ -82,8 +82,8 @@ class SiteController extends Controller
 
     }*/
 
-    public function actionError($message) {
-        return $this->render('error', [
+    public function actionErrorpage($message) {
+        return $this->render('errorpage', [
             'message' => $message
         ]);
     }
