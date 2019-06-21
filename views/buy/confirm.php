@@ -43,6 +43,7 @@ $order = 'A'. date("YmdHis") . \app\models\Machine::$number;
             </div>
             ';
         }
+        echo '<br/>'
     ?>
 
     <?= DetailView::widget([
