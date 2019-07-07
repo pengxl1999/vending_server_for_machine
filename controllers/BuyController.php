@@ -84,14 +84,11 @@ class BuyController extends Controller
      */
     public function actionConfirm($medId)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
     {
-        //self::$isUploaded = false;
-
-        //$searchModel = new CustomerCarSearch();
-        //$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        //$dataProvider = $searchModel->searchByUser($_SESSION['userId']);
+        $medicine = Medicine::findOne(['m_id' => $medId]);
 
         return $this->render('confirm', [
             'medId' => $medId,
+            'medicine' => $medicine,
             //'searchModel' => $searchModel,
             //'dataProvider' => $dataProvider,
         ]);
