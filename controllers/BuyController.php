@@ -26,9 +26,6 @@ require "../vendor/alipay/f2fpay/service/AlipayTradeService.php";
 class BuyController extends Controller
 {
     public $enableCsrfValidation = false;
-    public static $money = 0;       //总金额
-    public static $hasRx = false;       //是否有处方药
-    public static $isUploaded = false;      //是否上传图片
     /**
      * {@inheritdoc}
      */
@@ -84,16 +81,15 @@ class BuyController extends Controller
      * 确认付款
      * @return string
      */
-    public function actionCheck($medId)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
+    public function actionConfirm($medId)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
     {
-        self::$money = 0;
         //self::$isUploaded = false;
 
         //$searchModel = new CustomerCarSearch();
         //$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         //$dataProvider = $searchModel->searchByUser($_SESSION['userId']);
 
-        return $this->render('check', [
+        return $this->render('confirm', [
             'medId' => $medId,
             //'searchModel' => $searchModel,
             //'dataProvider' => $dataProvider,
@@ -113,14 +109,14 @@ class BuyController extends Controller
 
     /**
      * 支付宝二维码付款
+     * @param $order
      * @param $totalAmount
      * @param $medId
      * @return string
      * @throws \Exception
      */
-    public function actionPay($totalAmount, $medId) {
+    public function actionPay($order, $totalAmount, $medId) {
         date_default_timezone_set("Asia/Shanghai");
-        $order = date("YmdHis") . '0000001';
 
         $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
         $qrPayRequestBuilder->setOutTradeNo($order);

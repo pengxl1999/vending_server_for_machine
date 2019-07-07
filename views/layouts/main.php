@@ -55,7 +55,7 @@ AppAsset::register($this);
                 <p class="pull-left" style="margin-left: 70px; margin-top:10px; color: #496f89; font-size: large">合计：￥' .
             number_format(\app\models\BuyStatus::$totalAmount, 2) .
             '</p>' .
-            Html::a('支付', ['pay', 'mMoney' => \app\models\BuyStatus::$totalAmount], ['class' => 'btn btn-success pull-right',
+            Html::a('支付', ['pay', 'order' => $order, 'totalAmount' => \app\models\BuyStatus::$totalAmount, 'medId' => \app\models\BuyStatus::$medId], ['class' => 'btn btn-success pull-right',
                 'style' => 'margin-right: 70px; font-size: large; width: 80px']) .
             '</div>'
         ;
