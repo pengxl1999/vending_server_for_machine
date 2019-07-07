@@ -14,7 +14,7 @@ use yii\widgets\DetailView;
 
 $this->title = '确认购买';
 $this->params['breadcrumbs'][] = $this->title;
-\app\models\BuyStatus::$totalAmount = $medicine->money * $num;
+\app\models\BuyStatus::$totalAmount = $medicine->money;
 \app\models\BuyStatus::$medId = $medId;
 date_default_timezone_set("Asia/Shanghai");
 $order = 'A'. date("YmdHis") . \app\models\Machine::$number;
