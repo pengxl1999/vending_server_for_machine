@@ -12,6 +12,8 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'ca_order')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'c_id')->textInput() ?>
 
     <?= $form->field($model, 'm_id')->textInput() ?>
@@ -29,6 +31,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'img')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'pa_id')->textInput() ?>
+
+    <?= $form->field($model, 'money')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

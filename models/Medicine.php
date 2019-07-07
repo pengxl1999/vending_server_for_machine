@@ -54,7 +54,7 @@ class Medicine extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['m_id', 'guarantee', 'cert', 'money'], 'required'],
+            [['m_id', 'money'], 'required'],
             [['m_id', 'type', 'number', 'guarantee', 'fomulation', 'brand', 'manufacturer'], 'integer'],
             [['money'], 'number'],
             [['name', 'commodity_name', 'common_name', 'other_name', 'english_name', 'composition', 'img'], 'string', 'max' => 255],
@@ -75,13 +75,13 @@ class Medicine extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'm_id' => 'ID',
+            'm_id' => 'M ID',
             'name' => '药品名称',
             'commodity_name' => 'Commodity Name',
             'common_name' => 'Common Name',
             'other_name' => 'Other Name',
-            'english_name' => '英文名称',
-            'type' => '类型',         //处方or非处方
+            'english_name' => 'English Name',
+            'type' => '类型',
             'composition' => 'Composition',
             'usage' => '用法',
             'symptom' => '适应症',

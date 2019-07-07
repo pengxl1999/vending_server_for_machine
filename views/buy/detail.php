@@ -24,7 +24,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'm_id',
+            //'m_id',
+            [
+                'label' => '图片',
+                'format' => 'raw',
+                'value' => function($model) {
+                    return Html::img('image/medicine/'.$model->img, ['alt' => $model->name]);
+                }
+            ],
             'name',
             'commodity_name',
             'common_name',
@@ -43,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'brand',
             'cert',
             'manufacturer',
-            'img',
+            //'img',
             'money',
         ],
     ]) ?>

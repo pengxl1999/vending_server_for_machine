@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "customer_appointment".
  *
  * @property int $ca_id
+ * @property string $ca_order
  * @property int $c_id
  * @property int $m_id
  * @property string $ca_time
@@ -17,6 +18,7 @@ use Yii;
  * @property int $num
  * @property string $img
  * @property int $pa_id
+ * @property string $money
  *
  * @property User $c
  * @property Medicine $m
@@ -39,9 +41,11 @@ class CustomerAppointment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['c_id', 'm_id'], 'required'],
+            [['c_id', 'm_id', 'money'], 'required'],
             [['c_id', 'm_id', 'status', 'v_id', 'num', 'pa_id'], 'integer'],
             [['ca_time', 'deadline'], 'safe'],
+            [['money'], 'number'],
+            [['ca_order'], 'string', 'max' => 32],
             [['img'], 'string', 'max' => 255],
             [['c_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['c_id' => 'id']],
             [['m_id'], 'exist', 'skipOnError' => true, 'targetClass' => Medicine::className(), 'targetAttribute' => ['m_id' => 'm_id']],
@@ -57,6 +61,7 @@ class CustomerAppointment extends \yii\db\ActiveRecord
     {
         return [
             'ca_id' => 'Ca ID',
+            'ca_order' => 'Ca Order',
             'c_id' => 'C ID',
             'm_id' => 'M ID',
             'ca_time' => 'Ca Time',
@@ -66,6 +71,7 @@ class CustomerAppointment extends \yii\db\ActiveRecord
             'num' => 'Num',
             'img' => 'Img',
             'pa_id' => 'Pa ID',
+            'money' => 'Money',
         ];
     }
 
