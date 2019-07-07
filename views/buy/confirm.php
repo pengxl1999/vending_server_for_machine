@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 \app\models\BuyStatus::$totalAmount = $medicine->money;
 \app\models\BuyStatus::$medId = $medId;
 date_default_timezone_set("Asia/Shanghai");
-$order = 'A'. date("YmdHis") . \app\models\Machine::$number;
+\app\models\BuyStatus::$order = 'A'. date("YmdHis") . \app\models\Machine::$number;
 ?>
 <div class="customer-car-index">
     <p>
@@ -34,7 +34,7 @@ $order = 'A'. date("YmdHis") . \app\models\Machine::$number;
                 <div>
                     <p>您的订单中包含处方药，请上传处方！</p>
                     <a class="btn btn-danger" onclick="window.android.getImageForBuying(
-                        \'' . $order . '\')">上传图片</a>
+                        \'' . \app\models\BuyStatus::$order . '\')">上传图片</a>
                 </div>
                 ';
         }

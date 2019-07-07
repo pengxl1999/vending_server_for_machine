@@ -51,8 +51,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'header' => "名称",
                 'class' => 'yii\grid\ActionColumn',
                 'template'=> '{name}',
-                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
-                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large; width: 100'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle; width: 100'],
                 'buttons' => [
                     'name' => function ($url, $model) {
                         //$_SESSION['medId'] = $model->m_id;
