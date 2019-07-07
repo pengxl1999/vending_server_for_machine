@@ -24,7 +24,9 @@ $alipay = array(
     //支付宝公钥,查看地址：https://openhome.alipay.com/platform/keyManage.htm 对应APPID下的支付宝公钥。
     'alipay_public_key' => "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopT9A/Xqj7suZ4RnovQv/dsY6IOiUCMjg+MPsJ72W+W2a1qE/jWvzB0bCGMr4lwExUNgRr2qweKR+L/sNCfhIZjhZJHn1jqN98l61XMz4mRxc1/6uxu+2k6B/wVRVvb7tCh9PEZAdDqF7HbdJj9dzePd3uwRte9IkYzDSjNNeEK3a77mo0o3tlRRQmFVm1rYQHaRye2HuqWtb/HkuDq/m07BbwE8H+qxY12KtW3Swovz+TNGI5kstGLY96z5+0fpTNl96iwQ4DFhRJvIfKe2maeo7iKlfVX0gvG7GlccF3W+ewYQ2PoLjA4wP324Qn3svG5MX+0C8PASNoNXVOZ4fwIDAQAB",
 
+    'MaxQueryRetry' => 3,
 
+    'QueryDuration' => 3,
 );
 
 return [
