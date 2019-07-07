@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/params.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="54" column="123" selection-start-line="54" selection-start-column="123" selection-end-line="54" selection-end-column="123" />
+            <state relative-caret-position="720">
+              <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
               <folding>
                 <element signature="e#7#37#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -145,16 +144,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="358" column="40" selection-start-line="358" selection-start-column="40" selection-end-line="358" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
@@ -203,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/EntryForm.php" />
         <option value="$PROJECT_DIR$/views/site/entry-confirm.php" />
         <option value="$PROJECT_DIR$/views/site/entry.php" />
         <option value="$PROJECT_DIR$/models/Hello.php" />
@@ -252,8 +250,9 @@
         <option value="$PROJECT_DIR$/models/BuyStatus.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/views/buy/confirm.php" />
-        <option value="$PROJECT_DIR$/views/buy/index.php" />
         <option value="$PROJECT_DIR$/config/params.php" />
+        <option value="$PROJECT_DIR$/views/buy/index.php" />
+        <option value="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" />
       </list>
     </option>
   </component>
@@ -536,7 +535,7 @@
       <workItem from="1558958950558" duration="1809000" />
       <workItem from="1559452210994" duration="3099000" />
       <workItem from="1559529861236" duration="83000" />
-      <workItem from="1562498135022" duration="5902000" />
+      <workItem from="1562498135022" duration="6159000" />
     </task>
     <task id="LOCAL-00001" summary="v0.6">
       <created>1559529926981</created>
@@ -587,11 +586,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562506198556</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="alipay">
+      <created>1562506399294</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506399294</updated>
+    </task>
+    <task id="LOCAL-00009" summary="alipay">
+      <created>1562506422639</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506422639</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189793000" />
+    <option name="totallyTimeSpent" value="190050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -947,10 +960,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/buy/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="123" selection-start-line="54" selection-start-column="123" selection-end-line="54" selection-end-column="123" />
+        <state relative-caret-position="720">
+          <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
           <folding>
             <element signature="e#7#37#0#PHP" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -960,15 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="358" column="40" selection-start-line="358" selection-start-column="40" selection-end-line="358" selection-end-column="40" />
         </state>
       </provider>
     </entry>

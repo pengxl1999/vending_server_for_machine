@@ -76,6 +76,7 @@
       <path value="$PROJECT_DIR$/vendor/alipay/f2fpay" />
       <path value="$PROJECT_DIR$/vendor/alipay/.settings" />
       <path value="$PROJECT_DIR$/vendor/alipay/lotusphp_runtime" />
+      <path value="$PROJECT_DIR$/vendor/alipay/log" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />

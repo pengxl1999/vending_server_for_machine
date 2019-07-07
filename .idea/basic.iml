@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/aop" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/f2fpay" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/img" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/lotusphp_runtime" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
