@@ -71,6 +71,11 @@
       <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-gii" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/alipay/aop" />
+      <path value="$PROJECT_DIR$/vendor/alipay/img" />
+      <path value="$PROJECT_DIR$/vendor/alipay/f2fpay" />
+      <path value="$PROJECT_DIR$/vendor/alipay/.settings" />
+      <path value="$PROJECT_DIR$/vendor/alipay/lotusphp_runtime" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />

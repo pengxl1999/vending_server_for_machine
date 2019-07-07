@@ -7,6 +7,7 @@ use yii\grid\GridView;
 use yii\web\View;
 
 /* @var $this yii\web\View */
+/* @var $medId */
 /* @var $searchModel app\models\CustomerCarSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
@@ -27,6 +28,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <p class="pull-left" style="margin-left: 20px; margin-top:10px; color: #496f89;">合计：￥
         <?php echo number_format(\app\controllers\BuyController::$money, 2); ?>
     </p>
-    <?= Html::a('去结算', ['buy/addr', 'cart' => -1, 'mMoney' => \app\controllers\BuyController::$money], ['class' => 'btn btn-default pull-right',
+    <?= Html::a('去结算', ['buy/pay', 'totalAmount' => \app\controllers\BuyController::$money, 'medId' => $medId], ['class' => 'btn btn-default pull-right',
         'style' => 'margin-right:20px;']); ?>
 </footer>

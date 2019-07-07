@@ -20,6 +20,9 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 
+require "../vendor/alipay/f2fpay/model/builder/AlipayTradePrecreateContentBuilder.php";
+require "../vendor/alipay/f2fpay/service/AlipayTradeService.php";
+
 class BuyController extends Controller
 {
     public $enableCsrfValidation = false;
@@ -78,10 +81,10 @@ class BuyController extends Controller
     }
 
     /**
-     * 支付
+     * 确认付款
      * @return string
      */
-    public function actionPay()    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
+    public function actionCheck($medId)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
     {
         self::$money = 0;
         //self::$isUploaded = false;
@@ -90,7 +93,8 @@ class BuyController extends Controller
         //$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         //$dataProvider = $searchModel->searchByUser($_SESSION['userId']);
 
-        return $this->render('pay', [
+        return $this->render('check', [
+            'medId' => $medId,
             //'searchModel' => $searchModel,
             //'dataProvider' => $dataProvider,
         ]);
@@ -105,6 +109,44 @@ class BuyController extends Controller
         return $this->render('detail', [
             'model' => Medicine::findOne($medId),
         ]);
+    }
+
+    /**
+     * 支付宝二维码付款
+     * @param $totalAmount
+     * @param $medId
+     * @return string
+     * @throws \Exception
+     */
+    public function actionPay($totalAmount, $medId) {
+        date_default_timezone_set("Asia/Shanghai");
+        $order = date("YmdHis") . '0000001';
+
+        $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
+        $qrPayRequestBuilder->setOutTradeNo($order);
+        $qrPayRequestBuilder->setTotalAmount($totalAmount);
+
+        //获取config
+        $config = Yii::$app->params['alipay'];
+        $qrPay = new \AlipayTradeService($config);
+        $qrPayResult = $qrPay->qrPay($qrPayRequestBuilder);
+
+        switch ($qrPayResult->getTradeStatus()) {
+            case "SUCCESS":
+                echo "支付成功！";
+                break;
+            case "FAILED":
+                echo "支付失败！";
+                break;
+            case "UNKNOWN":
+                echo "系统异常！";
+                break;
+            default:
+                echo "不支持的交易状态！";
+                break;
+        }
+
+        return $this->render('result');
     }
 
     /**

@@ -2,6 +2,11 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/aop" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/f2fpay" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/img" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alipay/lotusphp_runtime" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/inputmask" />
