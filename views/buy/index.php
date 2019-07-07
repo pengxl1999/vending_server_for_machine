@@ -51,8 +51,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'header' => "名称",
                 'class' => 'yii\grid\ActionColumn',
                 'template'=> '{name}',
-                'headerOptions' => ['style' => 'text-align:center; font-size:x-large; width: 150'],
-                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle; width: 150'],
+                'headerOptions' => ['style' => 'text-align:center; font-size: x-large'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size: x-large; vertical-align: middle'],
                 'buttons' => [
                     'name' => function ($url, $model) {
                         //$_SESSION['medId'] = $model->m_id;
@@ -66,8 +66,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($model) {
                     return $model->symptom;
                 },
-                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
-                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large; width: 200'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle; width: 200'],
             ],
             //'name',
             //'commodity_name',

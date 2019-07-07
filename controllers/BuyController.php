@@ -118,6 +118,7 @@ class BuyController extends Controller
 
         $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
         $qrPayRequestBuilder->setOutTradeNo($order);
+        $qrPayRequestBuilder->setSellerId(2088102177887755);
         $qrPayRequestBuilder->setTotalAmount($totalAmount);
 
         //获取config

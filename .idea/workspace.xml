@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/BuyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BuyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/buy/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/buy/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+            <state relative-caret-position="570">
+              <caret line="125" column="50" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
               <folding>
                 <element signature="e#36#61#0#PHP" expanded="true" />
               </folding>
@@ -92,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/confirm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="648">
+              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -101,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+            <state relative-caret-position="660">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="e#66#88#0#PHP" expanded="true" />
               </folding>
@@ -120,22 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/buy/detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-511">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="e#7#31#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
               <folding>
                 <element signature="e#7#37#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -144,20 +135,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="358" column="40" selection-start-line="358" selection-start-column="40" selection-end-line="358" selection-end-column="40" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/alipay/log.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/params.php">
+        <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/model/builder/AlipayTradePrecreateContentBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="-2100">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -190,6 +177,7 @@
       <find>hasRx</find>
       <find>search</find>
       <find>error</find>
+      <find>log.txt</find>
     </findStrings>
     <replaceStrings>
       <replace>or</replace>
@@ -246,13 +234,13 @@
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/views/buy/pay.php" />
         <option value="$PROJECT_DIR$/views/buy/check.php" />
-        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
         <option value="$PROJECT_DIR$/models/BuyStatus.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/views/buy/confirm.php" />
         <option value="$PROJECT_DIR$/config/params.php" />
-        <option value="$PROJECT_DIR$/views/buy/index.php" />
         <option value="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" />
+        <option value="$PROJECT_DIR$/views/buy/index.php" />
+        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
       </list>
     </option>
   </component>
@@ -335,6 +323,7 @@
       <path value="$PROJECT_DIR$/vendor/alipay/f2fpay" />
       <path value="$PROJECT_DIR$/vendor/alipay/.settings" />
       <path value="$PROJECT_DIR$/vendor/alipay/lotusphp_runtime" />
+      <path value="$PROJECT_DIR$/vendor/alipay/log" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -535,7 +524,7 @@
       <workItem from="1558958950558" duration="1809000" />
       <workItem from="1559452210994" duration="3099000" />
       <workItem from="1559529861236" duration="83000" />
-      <workItem from="1562498135022" duration="6159000" />
+      <workItem from="1562498135022" duration="7346000" />
     </task>
     <task id="LOCAL-00001" summary="v0.6">
       <created>1559529926981</created>
@@ -600,11 +589,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562506422639</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="alipay">
+      <created>1562506672247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506672247</updated>
+    </task>
+    <task id="LOCAL-00011" summary="alipay">
+      <created>1562506850488</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506850488</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190050000" />
+    <option name="totallyTimeSpent" value="191237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -646,37 +649,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="alipay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/ActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21210">
-          <caret line="716" column="20" selection-start-line="716" selection-start-column="20" selection-end-line="716" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/grid/ActionColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="147" column="52" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/customer-car/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/BaseHtml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="1934" column="27" selection-start-line="1934" selection-start-column="27" selection-end-line="1934" selection-end-column="27" />
-          <folding>
-            <element signature="e#176#184#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/grid/Column.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1063">
@@ -916,47 +888,13 @@
     <entry file="file://$PROJECT_DIR$/views/buy/result.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/BuyStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/log/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/buy/detail.php">
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#31#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <element signature="e#66#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/buy/confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-          <folding>
-            <element signature="e#36#61#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="567">
+          <caret line="358" column="86" selection-start-line="358" selection-start-column="86" selection-end-line="358" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -967,10 +905,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/buy/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#7#31#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BuyStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#66#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/buy/confirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/buy/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+        <state relative-caret-position="300">
+          <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
           <folding>
             <element signature="e#7#37#0#PHP" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -978,10 +953,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/model/builder/AlipayTradePrecreateContentBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="358" column="40" selection-start-line="358" selection-start-column="40" selection-end-line="358" selection-end-column="40" />
+        <state relative-caret-position="-2100">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="125" column="50" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
+          <folding>
+            <element signature="e#36#61#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
