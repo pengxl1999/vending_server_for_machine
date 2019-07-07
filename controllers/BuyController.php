@@ -3,6 +3,7 @@
 
 namespace app\controllers;
 
+use app\models\BuyStatus;
 use app\models\CustomerCar;
 use app\models\CustomerCarSearch;
 use app\models\CustomerPurchase;
@@ -57,7 +58,7 @@ class BuyController extends Controller
      * @return string|Response
      */
     public function actionIndex($medId = -1) {
-        self::$hasRx = false;
+        BuyStatus::$hasRx = false;
         if($medId !== -1) {
             $this->addMedToCart($medId);
         }
