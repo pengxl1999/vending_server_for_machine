@@ -118,6 +118,8 @@ class BuyController extends Controller
 
         $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
         $qrPayRequestBuilder->setOutTradeNo($order);
+        $qrPayRequestBuilder->setSubject("语音智能药品售货机-支付宝-当面付-扫码支付");
+        $qrPayRequestBuilder->setTimeExpress("2m");
         $qrPayRequestBuilder->setSellerId(2088102177887755);
         $qrPayRequestBuilder->setTotalAmount($totalAmount);
 
@@ -126,9 +128,13 @@ class BuyController extends Controller
         $qrPay = new \AlipayTradeService($config);
         $qrPayResult = $qrPay->qrPay($qrPayRequestBuilder);
 
+
         switch ($qrPayResult->getTradeStatus()) {
             case "SUCCESS":
-                echo "支付成功！";
+                $response = $qrPayResult->getResponse();
+                $qrcode = $qrPay->create_erweima($response->qr_code);
+                echo $qrcode;
+                print_r($response);
                 break;
             case "FAILED":
                 echo "支付失败！";
@@ -140,8 +146,11 @@ class BuyController extends Controller
                 echo "不支持的交易状态！";
                 break;
         }
+    }
 
-        return $this->render('result');
+    public function actionQrcode() {
+
+        return $this->render('qrcode');
     }
 
     /**
