@@ -29,23 +29,23 @@ date_default_timezone_set("Asia/Shanghai");
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?php   //处方药需要上传处方
-        if($medicine->type === 1 && !\app\models\BuyStatus::$isUploaded) {
-            echo '
+    if($medicine->type === 1 && !\app\models\BuyStatus::$isUploaded) {
+        echo '
                 <div>
                     <p>您的订单中包含处方药，请上传处方！</p>
                     <a class="btn btn-danger" onclick="window.android.getImageForBuying(
                         \'' . \app\models\BuyStatus::$order . '\')">上传图片</a>
                 </div>
                 ';
-        }
-        else if($medicine->type === 1 && \app\models\BuyStatus::$isUploaded) {
-            echo '
+    }
+    else if($medicine->type === 1 && \app\models\BuyStatus::$isUploaded) {
+        echo '
             <div>
                 <p>处方图片上传成功！请稍候……</p>
             </div>
             ';
-        }
-        echo '<br/>'
+    }
+    echo '<br/>'
     ?>
 
     <?= DetailView::widget([

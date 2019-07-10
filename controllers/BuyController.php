@@ -27,6 +27,9 @@ require "../vendor/alipay/f2fpay/service/AlipayTradeService.php";
 class BuyController extends Controller
 {
     public $enableCsrfValidation = false;
+    public static $money = 0;       //总金额
+    public static $hasRx = false;       //是否有处方药
+    public static $isUploaded = false;      //是否上传图片
     /**
      * {@inheritdoc}
      */
@@ -58,7 +61,7 @@ class BuyController extends Controller
      * @return string|Response
      */
     public function actionIndex($medId = -1) {
-        BuyStatus::$hasRx = false;
+        self::$hasRx = false;
         if($medId !== -1) {
             $this->addMedToCart($medId);
         }
@@ -79,18 +82,26 @@ class BuyController extends Controller
     }
 
     /**
-     * 确认付款
+     * 确认购买
+     * @param $medId
+     * @param $num
+     * @param $isUploaded
      * @return string
      */
-    public function actionConfirm($medId)    //medId不为-1，新增药品；operation不为-1，0增加、1减少或2删除
+    public function actionConfirm($medId, $num = 1, $isUploaded = false)
     {
+        BuyStatus::$hasRx = false;
+        BuyStatus::$isUploaded = $isUploaded;
         $medicine = Medicine::findOne(['m_id' => $medId]);
 
+        if($medicine->type === 1) {
+            BuyStatus::$hasRx = true;
+        }
+
         return $this->render('confirm', [
-            'medId' => $medId,
             'medicine' => $medicine,
-            //'searchModel' => $searchModel,
-            //'dataProvider' => $dataProvider,
+            'num' => $num,
+            'medId' => $medId,
         ]);
     }
 
@@ -104,6 +115,7 @@ class BuyController extends Controller
             'model' => Medicine::findOne($medId),
         ]);
     }
+
 
     /**
      * 支付宝二维码付款
@@ -127,30 +139,36 @@ class BuyController extends Controller
         $config = Yii::$app->params['alipay'];
         $qrPay = new \AlipayTradeService($config);
         $qrPayResult = $qrPay->qrPay($qrPayRequestBuilder);
-
+        $response = $qrPayResult->getResponse();
 
         switch ($qrPayResult->getTradeStatus()) {
             case "SUCCESS":
-                $response = $qrPayResult->getResponse();
-                $qrcode = $qrPay->create_erweima($response->qr_code);
-                echo $qrcode;
-                print_r($response);
+                $qrcode = $this->createQrCode($response->qr_code);
+                //生成二维码
+                header('Content-type: image/png');
+                //echo $qrcode;
+                //print_r($response);
                 break;
             case "FAILED":
-                echo "支付失败！";
                 break;
             case "UNKNOWN":
-                echo "系统异常！";
                 break;
             default:
-                echo "不支持的交易状态！";
                 break;
         }
+
+        return $this->render('pay', [
+            'qrcode' => $qrcode,
+            'response' => $response,
+        ]);
     }
 
-    public function actionQrcode() {
-
-        return $this->render('qrcode');
+    public function createQrCode($content) {
+        $data = urlencode($content);
+        $size = '400x400';
+        $qrurl = "http://chart.googleapis.com/chart?chs=$size&cht=qr&chl=$data&chld=L|1&choe=UTF-8";
+        $qrcode = '<img src="'.$qrurl.'" width="400" height="400" />';
+        return $qrcode;
     }
 
     /**
@@ -159,9 +177,9 @@ class BuyController extends Controller
      */
     public function addMedToCart($medId) {
         if(($cart = CustomerCar::findOne([
-            'c_id' => $_SESSION['userId'],
-            'cc_medicine' => $medId,
-        ])) != null) {
+                'c_id' => $_SESSION['userId'],
+                'cc_medicine' => $medId,
+            ])) != null) {
             $cart->cc_num++;         //购物车存在同种药，则数量增加1
             $cart->save();
         }

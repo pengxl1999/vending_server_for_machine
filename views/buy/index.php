@@ -23,8 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <br/>
     <form id='search_form' action="./index.php?r=buy/index" method="post">
-        <input type="text" name="search_med" id='search_med' placeholder="搜索药品" style="font-size: large" value=""/>
-        <input type="submit" value="搜索" class="btn btn-primary" style="font-size:large; margin-left: 15px" />
+        <input type="text" name="search_med" id='search_med' placeholder="搜索药品" style="font-size: x-large" value=""/>
+        <input type="submit" value="搜索" class="btn btn-primary" style="font-size:x-large; margin-left: 15px" />
     </form>
 
     <br/>
@@ -41,18 +41,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 'enableSorting' => false,
                 'format' => 'raw',
                 'value' => function($model) {
-                    return Html::img('images/medicine/'.$model->img, ['alt' => $model->name, 'width' => '150']);
+                    return Html::img('images/medicine/'.$model->img, ['alt' => $model->name]);
                 },
-                'headerOptions' => ['style' => 'text-align:center; font-size:x-large', 'width' => '150'],
-                'contentOptions' => ['align' => 'center', 'width' => '150', 'style' => 'font-size:x-large; vertical-align: middle'],
+                'headerOptions' => ['style' => 'text-align: center; font-size: x-large; width: 150px'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size: x-large; vertical-align: middle; width: 150px'],
             ],
             //'img',
             [
                 'header' => "名称",
                 'class' => 'yii\grid\ActionColumn',
                 'template'=> '{name}',
-                'headerOptions' => ['style' => 'text-align:center; font-size: x-large'],
-                'contentOptions' => ['align' => 'center', 'style' => 'font-size: x-large; vertical-align: middle'],
+                'headerOptions' => ['style' => 'text-align: center; font-size: x-large; width: 150px'],
+                'contentOptions' => ['style' => 'text-align: center; font-size: x-large; vertical-align: middle; width: 150px'],
                 'buttons' => [
                     'name' => function ($url, $model) {
                         //$_SESSION['medId'] = $model->m_id;
@@ -66,8 +66,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($model) {
                     return $model->symptom;
                 },
-                'headerOptions' => ['style' => 'text-align:center; font-size:x-large; width: 200'],
-                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle; width: 200'],
+                'headerOptions' => ['style' => 'text-align:center; font-size:x-large'],
+                'contentOptions' => ['align' => 'center', 'style' => 'font-size:x-large; vertical-align: middle'],
             ],
             //'name',
             //'commodity_name',
