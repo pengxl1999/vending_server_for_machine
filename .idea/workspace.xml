@@ -2,12 +2,438 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/buy/pay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/CHANGELOG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/bindings/tcpdf/qrcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_11.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_12.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_13.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_14.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_15.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_16.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_17.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_18.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_19.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_21.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_22.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_23.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_24.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_25.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_26.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_27.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_28.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_29.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_30.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_32.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_33.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_34.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_35.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_36.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_37.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_38.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_39.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_40.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_8.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_9.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/frame_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_101_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_105_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_109_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_113_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_117_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_121_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_125_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_129_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_133_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_137_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_141_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_145_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_149_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_153_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_157_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_161_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_165_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_169_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_173_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_177_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_21_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_25_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_29_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_33_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_37_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_41_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_45_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_49_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_53_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_57_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_61_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_65_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_69_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_73_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_77_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_81_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_85_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_89_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_93_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_0/mask_97_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_101_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_105_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_109_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_113_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_117_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_121_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_125_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_129_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_133_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_137_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_141_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_145_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_149_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_153_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_157_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_161_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_165_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_169_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_173_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_177_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_21_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_25_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_29_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_33_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_37_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_41_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_45_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_49_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_53_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_57_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_61_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_65_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_69_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_73_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_77_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_81_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_85_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_89_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_93_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_1/mask_97_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_101_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_105_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_109_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_113_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_117_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_121_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_125_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_129_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_133_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_137_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_141_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_145_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_149_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_153_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_157_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_161_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_165_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_169_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_173_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_177_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_21_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_25_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_29_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_33_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_37_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_41_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_45_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_49_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_53_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_57_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_61_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_65_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_69_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_73_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_77_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_81_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_85_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_89_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_93_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_2/mask_97_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_101_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_105_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_109_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_113_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_117_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_121_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_125_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_129_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_133_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_137_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_141_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_145_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_149_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_153_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_157_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_161_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_165_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_169_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_173_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_177_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_21_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_25_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_29_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_33_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_37_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_41_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_45_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_49_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_53_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_57_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_61_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_65_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_69_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_73_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_77_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_81_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_85_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_89_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_93_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_3/mask_97_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_101_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_105_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_109_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_113_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_117_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_121_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_125_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_129_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_133_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_137_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_141_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_145_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_149_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_153_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_157_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_161_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_165_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_169_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_173_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_177_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_21_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_25_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_29_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_33_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_37_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_41_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_45_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_49_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_53_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_57_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_61_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_65_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_69_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_73_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_77_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_81_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_85_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_89_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_93_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_4/mask_97_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_101_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_105_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_109_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_113_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_117_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_121_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_125_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_129_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_133_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_137_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_141_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_145_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_149_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_153_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_157_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_161_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_165_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_169_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_173_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_177_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_21_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_25_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_29_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_33_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_37_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_41_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_45_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_49_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_53_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_57_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_61_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_65_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_69_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_73_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_77_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_81_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_85_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_89_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_93_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_5/mask_97_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_101_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_105_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_109_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_113_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_117_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_121_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_125_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_129_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_133_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_137_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_141_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_145_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_149_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_153_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_157_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_161_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_165_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_169_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_173_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_177_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_21_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_25_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_29_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_33_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_37_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_41_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_45_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_49_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_53_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_57_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_61_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_65_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_69_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_73_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_77_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_81_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_85_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_89_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_93_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_6/mask_97_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_101_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_105_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_109_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_113_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_117_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_121_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_125_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_129_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_133_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_137_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_141_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_145_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_149_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_153_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_157_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_161_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_165_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_169_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_173_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_177_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_21_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_25_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_29_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_33_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_37_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_41_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_45_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_49_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_53_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_57_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_61_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_65_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_69_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_73_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_77_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_81_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_85_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_89_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_93_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/cache/mask_7/mask_97_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/phpqrcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrbitstream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrconfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrconst.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrencode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrimage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrinput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrlib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrmask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrrscode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrspec.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrsplit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/qrtools.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/tools/merge.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/tools/merge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/tools/merge.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/tools/merged_config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/phpqrcode/tools/merged_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/params.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/BuyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BuyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/buy/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/buy/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/buy/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/buy/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/alipay/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/alipay/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/buy/pay.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/buy/pay.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +476,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
+            <state relative-caret-position="660">
+              <caret line="169" column="29" selection-start-line="169" selection-start-column="29" selection-end-line="169" selection-end-column="29" />
               <folding>
                 <element signature="e#36#61#0#PHP" expanded="true" />
               </folding>
@@ -65,20 +491,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/pay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="372" selection-start-line="372" selection-end-line="372" />
+            <state relative-caret-position="150">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -86,21 +500,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="-450">
               <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#7#37#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -122,11 +535,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
+            <state relative-caret-position="1680">
               <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="e#66#88#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,9 +642,9 @@
         <option value="$PROJECT_DIR$/views/buy/confirm.php" />
         <option value="$PROJECT_DIR$/views/buy/index.php" />
         <option value="$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php" />
-        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
-        <option value="$PROJECT_DIR$/views/buy/pay.php" />
         <option value="$PROJECT_DIR$/config/params.php" />
+        <option value="$PROJECT_DIR$/views/buy/pay.php" />
+        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
       </list>
     </option>
   </component>
@@ -316,13 +728,16 @@
       <path value="$PROJECT_DIR$/vendor/alipay/.settings" />
       <path value="$PROJECT_DIR$/vendor/alipay/lotusphp_runtime" />
       <path value="$PROJECT_DIR$/vendor/alipay/log" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/tools" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/bindings" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="355" />
-    <option name="y" value="31" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="210" />
+    <option name="y" value="126" />
     <option name="width" value="1260" />
-    <option name="height" value="848" />
+    <option name="height" value="758" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -330,7 +745,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,6 +831,15 @@
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
               <item name="alipay" type="462c0819:PsiDirectoryNode" />
               <item name="f2fpay" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="alipay" type="462c0819:PsiDirectoryNode" />
+              <item name="f2fpay" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,6 +848,19 @@
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
               <item name="alipay" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="phpqrcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="phpqrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine" type="b2602c69:ProjectViewProjectNode" />
@@ -453,6 +889,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,7 +897,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../basic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -469,18 +906,18 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\machine\vendor" />
+      <recent name="E:\xampp\htdocs\machine\views\buy" />
+      <recent name="E:\xampp\htdocs\basic\images" />
+      <recent name="E:\xampp\htdocs\basic\models" />
+      <recent name="E:\xampp\htdocs\basic" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\basic\views\buy" />
       <recent name="E:\xampp\htdocs\basic\views\medicine" />
       <recent name="E:\xampp\htdocs\basic\views\site" />
       <recent name="E:\xampp\htdocs\basic\views\site\buy" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\machine\views\buy" />
-      <recent name="E:\xampp\htdocs\machine\vendor" />
-      <recent name="E:\xampp\htdocs\basic\images" />
-      <recent name="E:\xampp\htdocs\basic\models" />
-      <recent name="E:\xampp\htdocs\basic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,6 +964,9 @@
       <workItem from="1562498135022" duration="7933000" />
       <workItem from="1562508615332" duration="2054000" />
       <workItem from="1562661813447" duration="8090000" />
+      <workItem from="1562731114308" duration="22000" />
+      <workItem from="1562835954015" duration="1678000" />
+      <workItem from="1562846502782" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary="v0.6">
       <created>1559529926981</created>
@@ -623,13 +1063,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201968000" />
+    <option name="totallyTimeSpent" value="207037000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="355" y="31" width="1260" height="848" extended-state="1" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.36916667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.28422982" />
       <window_info id="Structure" order="1" sideWeight="0.5011211" side_tool="true" weight="0.20476772" />
       <window_info id="Favorites" order="2" sideWeight="0.5011211" side_tool="true" weight="0.22677262" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -665,23 +1105,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="alipay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/MedicineSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="122" column="54" lean-forward="true" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
-          <folding>
-            <element signature="e#30#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/MedicineTypeSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vending.sql" />
     <entry file="file://$PROJECT_DIR$/models/CustomerCar.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -866,13 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/model/result/AlipayF2FPrecreateResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/alipay/log.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -890,34 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/BuyStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <element signature="e#66#88#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/buy/qrcode.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/buy/confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -942,48 +1330,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/model/result/AlipayF2FPrecreateResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/model/result/AlipayF2FPayResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/buy/qrcode.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/buy/confirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#66#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BuyStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/service/AlipayTradeService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
+        <state relative-caret-position="779">
           <caret line="372" selection-start-line="372" selection-end-line="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/alipay/f2fpay/qrpay_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/buy/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="-450">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#7#37#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-          <folding>
-            <element signature="e#36#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/buy/pay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/params.php">
+    <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="660">
+          <caret line="169" column="29" selection-start-line="169" selection-start-column="29" selection-end-line="169" selection-end-column="29" />
+          <folding>
+            <element signature="e#36#61#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

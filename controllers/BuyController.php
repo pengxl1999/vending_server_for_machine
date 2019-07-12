@@ -23,6 +23,7 @@ use app\models\LoginForm;
 
 require "../vendor/alipay/f2fpay/model/builder/AlipayTradePrecreateContentBuilder.php";
 require "../vendor/alipay/f2fpay/service/AlipayTradeService.php";
+require "../vendor/phpqrcode/phpqrcode.php";
 
 class BuyController extends Controller
 {
@@ -131,7 +132,7 @@ class BuyController extends Controller
         $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
         $qrPayRequestBuilder->setOutTradeNo($order);
         $qrPayRequestBuilder->setSubject("语音智能药品售货机-支付宝-当面付-扫码支付");
-        $qrPayRequestBuilder->setTimeExpress("2m");
+        $qrPayRequestBuilder->setTimeExpress("5m");
         $qrPayRequestBuilder->setSellerId(2088102177887755);
         $qrPayRequestBuilder->setTotalAmount($totalAmount);
 
@@ -164,10 +165,10 @@ class BuyController extends Controller
     }
 
     public function createQrCode($content) {
-        $data = urlencode($content);
-        $size = '400x400';
-        $qrurl = "http://chart.googleapis.com/chart?chs=$size&cht=qr&chl=$data&chld=L|1&choe=UTF-8";
-        $qrcode = '<img src="'.$qrurl.'" width="400" height="400" />';
+        $errorCorrectionLevel = 'L';
+        $matrixPointSize = 6;
+        \QRcode::png($content, 'qrcode.png', $errorCorrectionLevel, $matrixPointSize, 2);
+        $qrcode = 'qrcode.png';
         return $qrcode;
     }
 
