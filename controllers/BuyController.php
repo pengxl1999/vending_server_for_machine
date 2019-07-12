@@ -28,7 +28,6 @@ require "../vendor/phpqrcode/phpqrcode.php";
 
 class BuyController extends Controller
 {
-    public $enableCsrfValidation = false;
     public static $money = 0;       //总金额
     public static $hasRx = false;       //是否有处方药
     public static $isUploaded = false;      //是否上传图片
@@ -55,6 +54,17 @@ class BuyController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
+    }
+
+    /**
+     * @param $action
+     * @return bool
+     * @throws \yii\web\BadRequestHttpException
+     */
+    public function beforeAction($action)
+    {
+        $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
     }
 
     /**
@@ -185,7 +195,6 @@ class BuyController extends Controller
         else {
             echo 'fail';
         }
-        return $this->render('notify');
     }
 
     /**
