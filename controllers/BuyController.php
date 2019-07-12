@@ -3,6 +3,7 @@
 
 namespace app\controllers;
 
+use AlipayTradeService;
 use app\models\BuyStatus;
 use app\models\CustomerCar;
 use app\models\CustomerCarSearch;
@@ -164,6 +165,33 @@ class BuyController extends Controller
         ]);
     }
 
+    /**
+     * 支付宝异步通知
+     * @throws \Exception
+     */
+    public function actionNotify() {
+        $arr = $_POST;
+        $config = Yii::$app->params['alipay'];
+        $alipayService = new \AlipayTradeService($config);
+        $alipayService->writeLog(var_export($_POST, true));
+        $result = $alipayService->check($arr);
+
+        if($result) {
+            $out_trade_no = $_POST['out_trade_no'];
+            $trade_status = $_POST['trade_status'];
+            $alipayService->writeLog($arr);
+            echo 'success';
+        }
+        else {
+            echo 'fail';
+        }
+    }
+
+    /**
+     * 创建二维码
+     * @param $content
+     * @return string
+     */
     public function createQrCode($content) {
         $errorCorrectionLevel = 'L';
         $matrixPointSize = 6;
@@ -171,6 +199,8 @@ class BuyController extends Controller
         $qrcode = 'qrcode.png';
         return $qrcode;
     }
+
+
 
     /**
      * 增加药品

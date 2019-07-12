@@ -353,6 +353,18 @@ class AlipayTradeService {
 		return $result;
 	}
 
+    /**
+     * 验签方法
+     * @param $arr 验签支付宝返回的信息，使用支付宝公钥。
+     * @return boolean
+     */
+    function check($arr){
+        $aop = new AopClient();
+        $aop->alipayrsaPublicKey = $this->alipay_public_key;
+        $result = $aop->rsaCheckV1($arr, $this->alipay_public_key, "RSA");
+        return $result;
+    }
+
 	function writeLog($text) {
 		// $text=iconv("GBK", "UTF-8//IGNORE", $text);
 		//$text = characet ( $text );
