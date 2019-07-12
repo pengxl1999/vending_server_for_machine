@@ -185,6 +185,7 @@ class BuyController extends Controller
         else {
             echo 'fail';
         }
+        return $this->render('notify');
     }
 
     /**
