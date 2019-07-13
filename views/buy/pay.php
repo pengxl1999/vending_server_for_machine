@@ -3,7 +3,15 @@
 /* @var $qrcode */
 /* @var $response */
 /* @var $qrPayRequestBuilder */
+?>
 
+<div style="text-align: center; vertical-align: middle">
+    <?php echo '<img src="'. $qrcode .'"/>'?>
+    <br />
+    <?php print_r($response) ?>
+</div>
+
+<?php
 set_time_limit(0);
 $config = Yii::$app->params['alipay'];
 $qrPay = new \AlipayTradeService($config);
@@ -27,10 +35,3 @@ if($result->getTradeStatus() == 'SUCCESS') {
 else {
     $qrPay->cancel($qrPayRequestBuilder);
 }
-?>
-
-<div style="text-align: center; vertical-align: middle">
-    <?php echo '<img src="'. $qrcode .'"/>'?>
-    <br />
-    <?php print_r($response) ?>
-</div>
