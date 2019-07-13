@@ -359,8 +359,7 @@ class AlipayTradeService {
      * @return boolean
      */
     function check($arr){
-        $config = Yii::$app->params['alipay'];
-        $signType = $config['sign_type'];
+        $signType = "RSA2";
         $aop = new AopClient();
         $aop->alipayrsaPublicKey = $this->alipay_public_key;
         $result = $aop->rsaCheckV1($arr, $this->alipay_public_key, $signType);
