@@ -14,6 +14,9 @@ if(!$result) {
 else {
     //$alipayService->writeLog($arr['trade_status']);
     $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $arr['out_trade_no']]);
+    if($customerPurchase == null) {
+        $alipayService->writeLog("hehe");
+    }
     if($arr['trade_status'] == 'WAIT_BUYER_PAY') {
         $customerPurchase->status = 1;
         $customerPurchase->save();
