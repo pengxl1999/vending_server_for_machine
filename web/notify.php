@@ -17,6 +17,7 @@ else {
     if($customerPurchase == null) {
         $alipayService->writeLog("hehe");
     }
+    $alipayService->writeLog($customerPurchase->cp_order);
     if($arr['trade_status'] == 'WAIT_BUYER_PAY') {
         $customerPurchase->status = 1;
         $customerPurchase->save();
