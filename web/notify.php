@@ -1,4 +1,5 @@
 <?php
+require_once '../models/CustomerPurchase.php';
 require_once '../vendor/alipay/f2fpay/service/AlipayTradeService.php';
 require_once '../config/params.php';
 
@@ -13,7 +14,6 @@ if(!$result) {
 }
 else {
     $out_trade_no = $arr['out_trade_no'];
-    $alipayService->writeLog($out_trade_no);
     $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $out_trade_no]);
     if($customerPurchase == null) {
         $alipayService->writeLog("hehe");
