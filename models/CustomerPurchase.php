@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "customer_purchase".
  *
  * @property int $cp_id
+ * @property string $cp_order
  * @property int $c_id
  * @property int $m_id
  * @property string $cp_time
@@ -41,6 +42,7 @@ class CustomerPurchase extends \yii\db\ActiveRecord
             [['cp_id', 'c_id', 'm_id'], 'required'],
             [['cp_id', 'c_id', 'm_id', 'status', 'v_id', 'num', 'pa_id'], 'integer'],
             [['cp_time'], 'safe'],
+            [['cp_order'], 'string', 'max' => 32],
             [['img'], 'string', 'max' => 255],
             [['cp_id'], 'unique'],
             [['c_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['c_id' => 'id']],
@@ -56,11 +58,12 @@ class CustomerPurchase extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'cp_id' => '订单编号',
+            'cp_id' => 'Cp ID',
+            'cp_order' => 'Cp Order',
             'c_id' => 'C ID',
             'm_id' => 'M ID',
-            'cp_time' => '下单时间',
-            'status' => '状态',
+            'cp_time' => 'Cp Time',
+            'status' => 'Status',
             'v_id' => 'V ID',
             'num' => 'Num',
             'img' => 'Img',
@@ -98,5 +101,9 @@ class CustomerPurchase extends \yii\db\ActiveRecord
     public function getPa()
     {
         return $this->hasOne(PharmacistAppointment::className(), ['pa_id' => 'pa_id']);
+    }
+
+    public static function getMaxId() {
+        return CustomerPurchase::find()->max('cp_id');
     }
 }

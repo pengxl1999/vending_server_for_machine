@@ -18,7 +18,7 @@ class CustomerPurchaseSearch extends CustomerPurchase
     {
         return [
             [['cp_id', 'c_id', 'm_id', 'status', 'v_id', 'num', 'pa_id'], 'integer'],
-            [['cp_time', 'img'], 'safe'],
+            [['cp_order', 'cp_time', 'img'], 'safe'],
         ];
     }
 
@@ -68,33 +68,8 @@ class CustomerPurchaseSearch extends CustomerPurchase
             'pa_id' => $this->pa_id,
         ]);
 
-        $query->andFilterWhere(['like', 'img', $this->img]);
-
-        return $dataProvider;
-    }
-
-    public function searchByParams($param) {
-        $query = CustomerPurchase::find();
-
-        // add conditions that should always apply here
-
-        $dataProvider = new ActiveDataProvider([
-            'query' => $query,
-        ]);
-
-        // grid filtering conditions
-        $query->orFilterWhere([
-            'cp_id' => $param,
-            //'c_id' => $this->c_id,
-            //'m_id' ,
-            'cp_time' => $param,
-            'status' => $param,
-            //'v_id' => $this->v_id,
-            //'num' => $this->num,
-            //'pa_id' => $this->pa_id,
-        ]);
-
-        //$query->andFilterWhere(['like', 'img', $this->img]);
+        $query->andFilterWhere(['like', 'cp_order', $this->cp_order])
+            ->andFilterWhere(['like', 'img', $this->img]);
 
         return $dataProvider;
     }

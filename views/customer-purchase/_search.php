@@ -17,13 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cp_id') ?>
 
+    <?= $form->field($model, 'cp_order') ?>
+
     <?= $form->field($model, 'c_id') ?>
 
     <?= $form->field($model, 'm_id') ?>
 
     <?= $form->field($model, 'cp_time') ?>
 
-    <?= $form->field($model, 'status') ?>
+    <?php // echo $form->field($model, 'status') ?>
 
     <?php // echo $form->field($model, 'v_id') ?>
 

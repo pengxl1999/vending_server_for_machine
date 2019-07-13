@@ -134,46 +134,74 @@ class BuyController extends Controller
      * @param $order
      * @param $totalAmount
      * @param $medId
+     * @param $status
      * @return string
      * @throws \Exception
      */
     public function actionPay($order, $totalAmount, $medId) {
-        date_default_timezone_set("Asia/Shanghai");
 
-        $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
-        $qrPayRequestBuilder->setOutTradeNo($order);
-        $qrPayRequestBuilder->setSubject("语音智能药品售货机-支付宝-当面付-扫码支付");
-        $qrPayRequestBuilder->setTimeExpress("5m");
-        $qrPayRequestBuilder->setSellerId(2088102177887755);
-        $qrPayRequestBuilder->setTotalAmount($totalAmount);
+        $customerPurchase = CustomerPurchase::findOne(['cp_order' => $order]);
 
-        //获取config
-        $config = Yii::$app->params['alipay'];
-        $qrPay = new \AlipayTradeService($config);
-        $qrPayResult = $qrPay->qrPay($qrPayRequestBuilder);
-        $response = $qrPayResult->getResponse();
+        if($customerPurchase == null) {
+            date_default_timezone_set("Asia/Shanghai");
+            $qrPayRequestBuilder = new \AlipayTradePrecreateContentBuilder();
+            $qrPayRequestBuilder->setOutTradeNo($order);
+            $qrPayRequestBuilder->setSubject("语音智能药品售货机-支付宝-当面付-扫码支付");
+            $qrPayRequestBuilder->setTimeExpress("5m");
+            $qrPayRequestBuilder->setSellerId(2088102177887755);
+            $qrPayRequestBuilder->setTotalAmount($totalAmount);
 
-        switch ($qrPayResult->getTradeStatus()) {
-            case "SUCCESS":
-                $qrcode = $this->createQrCode($response->qr_code);
-                //生成二维码
-                header('Content-type: image/png');
-                //echo $qrcode;
-                //print_r($response);
-                break;
-            case "FAILED":
-                break;
-            case "UNKNOWN":
-                break;
-            default:
-                break;
+            //获取config
+            $config = Yii::$app->params['alipay'];
+            $qrPay = new \AlipayTradeService($config);
+            $qrPayResult = $qrPay->qrPay($qrPayRequestBuilder);
+            $response = $qrPayResult->getResponse();
+
+            switch ($qrPayResult->getTradeStatus()) {
+                case "SUCCESS":
+                    $qrcode = $this->createQrCode($response->qr_code);
+                    //生成二维码
+                    $customerPurchase = new CustomerPurchase();
+                    $customerPurchase->cp_id = CustomerPurchase::getMaxId() + 1;
+                    $customerPurchase->m_id = $medId;
+                    $customerPurchase->c_id = 1;
+                    $customerPurchase->cp_order = $order;
+                    $customerPurchase->img = $qrcode;
+                    $customerPurchase->status = 0;
+                    $customerPurchase->save();
+                    header('Content-type: image/png');
+                    //echo $qrcode;
+                    //print_r($response);
+                    break;
+                case "FAILED":
+                    echo "生成二维码失败！请联系管理员！";
+                    return null;
+                case "UNKNOWN":
+                    echo "未知错误！请联系管理员！";
+                    return null;
+                default:
+                    echo "未知错误！请联系管理员！";
+                    return null;
+            }
         }
 
-        return $this->render('pay', [
-            'qrcode' => $qrcode,
-            'response' => $response,
-            'qrPayRequestBuilder' => $qrPayRequestBuilder,
-        ]);
+        switch ($customerPurchase->status) {
+            case 0:
+                return $this->render('pay', [
+                    'qrcode' => $customerPurchase->img,
+                    'response' => $response,
+                ]);
+            case 1:
+                $response = "扫码成功！请在手机支付宝上完成购买！";
+                return $this->render('pay', [
+                    'qrcode' => $customerPurchase->img,
+                    'response' => $response,
+                ]);
+            case 2:
+
+        }
+
+        return null;
     }
 
     /**

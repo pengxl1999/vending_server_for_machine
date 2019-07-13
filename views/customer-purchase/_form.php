@@ -14,6 +14,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cp_id')->textInput() ?>
 
+    <?= $form->field($model, 'cp_order')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'c_id')->textInput() ?>
 
     <?= $form->field($model, 'm_id')->textInput() ?>
