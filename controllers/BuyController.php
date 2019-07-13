@@ -168,7 +168,10 @@ class BuyController extends Controller
                     $customerPurchase->cp_order = $order;
                     $customerPurchase->img = $qrcode;
                     $customerPurchase->status = 0;
-                    $customerPurchase->save();
+                    if(!$customerPurchase->save()) {
+                        echo "生成订单失败！请联系管理员！";
+                        return null;
+                    }
                     header('Content-type: image/png');
                     //echo $qrcode;
                     //print_r($response);
