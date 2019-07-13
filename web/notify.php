@@ -6,6 +6,7 @@ $arr = $_POST;
 $alipayService = new \AlipayTradeService($alipay);
 $alipayService->writeLog(var_export($arr, true));
 $result = $alipayService->check($arr);
+$alipayService->writeLog($result);
 
 if(!$result) {
 //    $out_trade_no = $_POST['out_trade_no'];
