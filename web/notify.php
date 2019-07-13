@@ -1,7 +1,6 @@
 <?php
 require_once '../vendor/alipay/f2fpay/service/AlipayTradeService.php';
 require_once '../config/params.php';
-require '../models/CustomerPurchase.php';
 
 $arr = $_POST;
 $alipayService = new AlipayTradeService($alipay);
