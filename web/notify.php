@@ -11,6 +11,8 @@ if($result) {
     $out_trade_no = $_POST['out_trade_no'];
     $trade_status = $_POST['trade_status'];
     $alipayService->writeLog($arr);
+    $alipayService->writeLog($out_trade_no);
+    $alipayService->writeLog($trade_status);
     $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $out_trade_no]);
     if($trade_status == 'WAIT_BUYER_PAY') {
         $customerPurchase->status = 1;
