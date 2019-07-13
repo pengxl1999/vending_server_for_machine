@@ -164,11 +164,11 @@ class BuyController extends Controller
                     $customerPurchase = new CustomerPurchase();
                     $customerPurchase->cp_id = CustomerPurchase::getMaxId() + 1;
                     $customerPurchase->m_id = $medId;
-                    $customerPurchase->c_id = 1;
+                    $customerPurchase->c_id = 0;
                     $customerPurchase->cp_order = $order;
                     $customerPurchase->img = $qrcode;
                     $customerPurchase->status = 0;
-                    if(!$customerPurchase->save()) {
+                    if(!$customerPurchase->save(false)) {
                         echo "生成订单失败！请联系管理员！";
                         return null;
                     }
