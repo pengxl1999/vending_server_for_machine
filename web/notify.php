@@ -6,7 +6,7 @@ $arr = $_POST;
 $alipayService = new \AlipayTradeService($alipay);
 $alipayService->writeLog(var_export($arr, true));
 $result = $alipayService->check($arr);
-$alipayService->writeLog($result);
+$alipayService->writeLog($arr['out_trade_no']);
 
 if(!$result) {
 //    $out_trade_no = $_POST['out_trade_no'];
@@ -16,7 +16,7 @@ if(!$result) {
     echo 'fail';
 }
 else {
-    $alipayService->writeLog($arr['out_trade_no']);
+
     $alipayService->writeLog($arr['trade_status']);
     $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $arr['out_trade_no']]);
 //    if($arr['trade_status'] == 'WAIT_BUYER_PAY') {
