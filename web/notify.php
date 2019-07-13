@@ -12,8 +12,9 @@ if(!$result) {
     echo 'fail';
 }
 else {
-    $alipayService->writeLog($arr['out_trade_no']);
-    $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $arr['out_trade_no']]);
+    $out_trade_no = $arr['out_trade_no'];
+    $alipayService->writeLog($out_trade_no);
+    $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $out_trade_no]);
     if($customerPurchase == null) {
         $alipayService->writeLog("hehe");
     }
