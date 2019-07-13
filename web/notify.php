@@ -25,8 +25,8 @@ if($result) {
         $customerPurchase->save();
     }
     //$alipayService->writeLog($arr);
-    //$alipayService->writeLog($arr['out_trade_no']);
-    //$alipayService->writeLog($arr['trade_status']);
+    $alipayService->writeLog($arr['out_trade_no']);
+    $alipayService->writeLog($arr['trade_status']);
     echo 'success';
 }
 else {
