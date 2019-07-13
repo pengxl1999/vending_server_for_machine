@@ -4,8 +4,11 @@ require_once '../config/params.php';
 
 $arr = $_POST;
 $alipayService = new \AlipayTradeService($alipay);
-$alipayService->writeLog(var_export($_POST, true));
+$alipayService->writeLog(var_export($arr, true));
 $result = $alipayService->check($arr);
+if(!$result) {
+    $alipayService->writeLog("false");
+}
 
 if($result) {
 //    $out_trade_no = $_POST['out_trade_no'];
@@ -22,7 +25,7 @@ if($result) {
         $customerPurchase->save();
     }
     //$alipayService->writeLog($arr);
-    $alipayService->writeLog($arr['out_trade_no']);
+    //$alipayService->writeLog($arr['out_trade_no']);
     //$alipayService->writeLog($arr['trade_status']);
     echo 'success';
 }
