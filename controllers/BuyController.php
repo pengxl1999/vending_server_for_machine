@@ -190,6 +190,7 @@ class BuyController extends Controller
 
         switch ($customerPurchase->status) {
             case 0:
+                $response = "请使用支付宝扫描上方二维码进行支付！";
                 return $this->render('pay', [
                     'qrcode' => $customerPurchase->img,
                     'response' => $response,
