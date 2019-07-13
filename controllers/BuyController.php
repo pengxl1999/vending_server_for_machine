@@ -172,6 +172,7 @@ class BuyController extends Controller
         return $this->render('pay', [
             'qrcode' => $qrcode,
             'response' => $response,
+            'qrPayRequestBuilder' => $qrPayRequestBuilder,
         ]);
     }
 
