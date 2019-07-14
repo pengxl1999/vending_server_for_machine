@@ -18,13 +18,23 @@ if (!$result) {
         die("could not connect to the database:\n" . $db->connect_error);
     }
     $db->query("set names 'utf8';");
-    $sql = "UPDATE customer_purchase SET status = '1' WHERE cp_order = '". $out_trade_no . "'";
-    $res = $db->query($sql);
-    if (!$res) {
-        $alipayService->writeLog("Query Error!");
-        die("sql error:\n" . $db->error);
+    if($arr['trade_status'] == 'WAIT_BUYER_PAY') {
+        $sql = "UPDATE customer_purchase SET status = '1' WHERE cp_order = '" . $out_trade_no . "'";
+        $res = $db->query($sql);
+        if (!$res) {
+            $alipayService->writeLog("Query Error!");
+            die("sql error:\n" . $db->error);
+        }
+        $res->free();
+    } else if($arr['trade_status'] == 'TRADE_SUCCESS') {
+        $sql = "UPDATE customer_purchase SET status = '2' WHERE cp_order = '" . $out_trade_no . "'";
+        $res = $db->query($sql);
+        if (!$res) {
+            $alipayService->writeLog("Query Error!");
+            die("sql error:\n" . $db->error);
+        }
+        $res->free();
     }
-    $res->free();
     $db->close();
     $alipayService->writeLog("haha");
 //    $alipayService->writeLog($customerPurchase->cp_order);

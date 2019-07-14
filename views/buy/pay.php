@@ -3,6 +3,7 @@
 /* @var $qrcode */
 /* @var $response */
 /* @var $qrPayRequestBuilder */
+/* @var $freshTime */
 ?>
 
 <meta http-equiv="refresh" content="2" />

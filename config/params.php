@@ -10,7 +10,7 @@ $alipay = array(
     'notify_url' => "http://to-group.top/machine/web/notify.php",
 
     //同步跳转
-    'return_url' => "http://to-group.top/machine/web/index.php?r=buy%2Fsuccess",
+    'return_url' => "",
 
     //编码格式
     'charset' => "UTF-8",

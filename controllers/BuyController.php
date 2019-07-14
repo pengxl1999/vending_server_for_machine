@@ -134,7 +134,6 @@ class BuyController extends Controller
      * @param $order
      * @param $totalAmount
      * @param $medId
-     * @param $status
      * @return string
      * @throws \Exception
      */
@@ -150,6 +149,8 @@ class BuyController extends Controller
             $qrPayRequestBuilder->setTimeExpress("5m");
             $qrPayRequestBuilder->setSellerId(2088102177887755);
             $qrPayRequestBuilder->setTotalAmount($totalAmount);
+
+            $_SESSION['freshTime'] = 0;
 
             //获取config
             $config = Yii::$app->params['alipay'];
@@ -190,6 +191,10 @@ class BuyController extends Controller
 
         switch ($customerPurchase->status) {
             case 0:
+                $_SESSION['freshTime']++;
+                if($_SESSION['freshTime'] > 60) {
+                    $this->redirect(['buy/failed']);
+                }
                 $response = "请使用支付宝扫描上方二维码进行支付！";
                 return $this->render('pay', [
                     'qrcode' => $customerPurchase->img,
@@ -202,11 +207,18 @@ class BuyController extends Controller
                     'response' => $response,
                 ]);
             case 2:
-
+                $this->redirect(['buy/success']);
         }
-
         return null;
     }
+
+    /*
+     * 支付成功
+     */
+    public function actionSuccess() {
+        return $this->render('success');
+    }
+
 
     /**
      * 创建二维码
@@ -220,8 +232,6 @@ class BuyController extends Controller
         $qrcode = 'qrcode.png';
         return $qrcode;
     }
-
-
 
     /**
      * 增加药品
