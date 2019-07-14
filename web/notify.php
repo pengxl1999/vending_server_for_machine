@@ -12,7 +12,7 @@ if (!$result) {
     echo 'fail';
 } else {
     $out_trade_no = $arr['out_trade_no'];
-    $db = new mysqli('127.0.0.1:3306', 'root', 'root', 'vending');
+    $db = new mysqli('localhost', 'root', 'root', 'vending');
     if($db->connect_errno) {
         $alipayService->writeLog("Database Error!");
         die("could not connect to the database:\n" . $db->connect_error);
