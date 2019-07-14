@@ -1,7 +1,4 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
-require __DIR__ . '/../config/web.php';
 require_once '../vendor/alipay/f2fpay/service/AlipayTradeService.php';
 
 $arr = $_POST;
@@ -17,7 +14,20 @@ if (!$result) {
 //    if($customerPurchase == null) {
 //        $alipayService->writeLog("hehe");
 //    }
-    $customerPurchase = \app\models\CustomerPurchase::findOne(['cp_order' => $arr['out_trade_no']]);
+    $db = new mysqli('127.0.0.1:3306', 'root', 'root', 'vending');
+    if($db->connect_errno) {
+        $alipayService->writeLog("Database Error!");
+        die("could not connect to the database:\n" . $db->connect_error);
+    }
+    $db->query("set names 'utf8';");
+    $sql = "UPDATE customer_purchase SET status = '1' WHERE cp_order = '". $out_trade_no . "'";
+    $res = $db->query($sql);
+    if (!$res) {
+        $alipayService->writeLog("Query Error!");
+        die("sql error:\n" . $db->error);
+    }
+    $res->free();
+    $db->close();
     $alipayService->writeLog("haha");
 //    $alipayService->writeLog($customerPurchase->cp_order);
 //    if($arr['trade_status'] == 'WAIT_BUYER_PAY') {
