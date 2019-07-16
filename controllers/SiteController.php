@@ -77,9 +77,6 @@ class SiteController extends Controller
         if(!session_id()) {
             session_start();
         }
-        if($machine == 0) {
-            $this->redirect(['errorpage', 'message' => '配置错误！请联系管理员！']);
-        }
         $_SESSION['machine'] = $machine;
         return $this->render('index');
     }

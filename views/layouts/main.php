@@ -31,15 +31,15 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         //'brandLabel' => Yii::$app->name,
-        'brandLabel' => 'Vending Machine',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandLabel' => '语音智能药品售货机',
+        'brandUrl' => ['site/index', 'machine' => $_SESSION['machine']],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right', 'style' => 'font-size: large'],
-    ]);
+//    echo Nav::widget([
+//        'options' => ['class' => 'navbar-nav navbar-right', 'style' => 'font-size: large'],
+//    ]);
     NavBar::end();
     ?>
 

@@ -2,9 +2,9 @@
 
 namespace app\models;
 
+use app\models\Medicine;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Medicine;
 
 /**
  * MedicineSearch represents the model behind the search form of `\app\models\Medicine`.
@@ -86,7 +86,23 @@ class MedicineSearch extends Medicine
         return $dataProvider;
     }
 
-    public function searchByParams($params) {
+    public function searchAll($medicines) {
+        $query = Medicine::find();
+
+        // add conditions that should always apply here
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        $query->andFilterWhere([
+            'm_id' => $medicines,
+        ]);
+
+        return $dataProvider;
+    }
+
+    public function searchByParams($medicines, $params) {
         $query = Medicine::find();
 
         // add conditions that should always apply here
@@ -110,6 +126,10 @@ class MedicineSearch extends Medicine
             ->orFilterWhere(['like', 'img', $params])
             ->orFilterWhere(['like', 'brand', $params])
             ->orFilterWhere(['like', 'manufacturer', $params]);
+
+        $query->andFilterWhere([
+            'm_id' => $medicines,
+        ]);
 
         return $dataProvider;
     }

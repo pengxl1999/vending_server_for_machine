@@ -75,14 +75,26 @@ class BuyController extends Controller
      */
     public function actionIndex() {
         self::$hasRx = false;
+
         $searchModel = new VemStatusSearch();
+        $id = $searchModel->searchAll($_SESSION['machine']);
+        $medicines = [];
+        $count = 0;
+        foreach($id->models as $model) {
+            $medicines[$count] = $model->m_id;
+            $count++;
+        }
+
+        //var_dump($array);
+
+        $searchModel = new MedicineSearch();
         $post = Yii::$app->request->post();
 
         if(isset($post['search_med'])) {       //判断是否搜索
             $search = $post['search_med'];
-            $dataProvider = $searchModel->searchByParams($_SESSION['machine'], $search);
+            $dataProvider = $searchModel->searchByParams($medicines, $search);
         } else {
-            $dataProvider = $searchModel->searchAll($_SESSION['machine']);
+            $dataProvider = $searchModel->searchAll($medicines);
         }
         return $this->render('index', [
             'searchModel' => $searchModel,

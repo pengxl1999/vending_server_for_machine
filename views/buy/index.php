@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="medicine-index">
     <p>
-        <?= Html::a('返回', ['site/index'], ['class' => 'btn btn-primary', 'style' => 'font-size: large']) ?>
+        <?= Html::a('返回', ['site/index', 'machine'=> $_SESSION['machine']], ['class' => 'btn btn-primary', 'style' => 'font-size: large']) ?>
     </p>
 
     <h1><strong style="font-size: xx-large"><?= Html::encode($this->title) ?></strong></h1>
