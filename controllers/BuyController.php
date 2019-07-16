@@ -15,6 +15,7 @@ use app\models\SignInForm;
 use app\models\User;
 use app\models\Vem;
 use app\models\VemSearch;
+use app\models\VemStatusSearch;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -23,6 +24,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 
 require "../vendor/alipay/f2fpay/model/builder/AlipayTradePrecreateContentBuilder.php";
+require "../vendor/alipay/f2fpay/model/builder/AlipayTradeCancelContentBuilder.php";
 require "../vendor/alipay/f2fpay/service/AlipayTradeService.php";
 require "../vendor/phpqrcode/phpqrcode.php";
 
@@ -69,23 +71,18 @@ class BuyController extends Controller
 
     /**
      * 购买药品
-     * @param int $medId
      * @return string|Response
      */
-    public function actionIndex($medId = -1) {
+    public function actionIndex() {
         self::$hasRx = false;
-        if($medId !== -1) {
-            $this->addMedToCart($medId);
-        }
-
-        $searchModel = new MedicineSearch();
+        $searchModel = new VemStatusSearch();
         $post = Yii::$app->request->post();
 
         if(isset($post['search_med'])) {       //判断是否搜索
             $search = $post['search_med'];
-            $dataProvider = $searchModel->searchByParams($search);
+            $dataProvider = $searchModel->searchByParams($_SESSION['machine'], $search);
         } else {
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            $dataProvider = $searchModel->searchAll($_SESSION['machine']);
         }
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -193,6 +190,12 @@ class BuyController extends Controller
             case 0:
                 $_SESSION['freshTime']++;
                 if($_SESSION['freshTime'] > 60) {
+                    $config = Yii::$app->params['alipay'];
+                    $qrPay = new \AlipayTradeService($config);
+                    //取消订单，防止顾客误购买
+                    $cancelContentBuilder = new \AlipayTradeCancelContentBuilder();
+                    $cancelContentBuilder->setOutTradeNo($customerPurchase->cp_order);
+                    $qrPay->cancel($cancelContentBuilder);
                     $this->redirect(['buy/failed']);
                 }
                 $response = "请使用支付宝扫描上方二维码进行支付！";
@@ -207,7 +210,10 @@ class BuyController extends Controller
                     'response' => $response,
                 ]);
             case 2:
-                $this->redirect(['buy/success']);
+                $this->redirect(['buy/success',
+                    'order' => $customerPurchase->cp_order,
+                    'medId' => $customerPurchase->m_id,
+                ]);
         }
         return null;
     }
@@ -233,25 +239,4 @@ class BuyController extends Controller
         return $qrcode;
     }
 
-    /**
-     * 增加药品
-     * @param $medId
-     */
-    public function addMedToCart($medId) {
-        if(($cart = CustomerCar::findOne([
-                'c_id' => $_SESSION['userId'],
-                'cc_medicine' => $medId,
-            ])) != null) {
-            $cart->cc_num++;         //购物车存在同种药，则数量增加1
-            $cart->save();
-        }
-        else {
-            $cart = new CustomerCar();
-            $cart['cc_id'] = CustomerCar::getMaxId() + 1;
-            $cart['c_id'] = $_SESSION['userId'];      //用户id
-            $cart['cc_medicine'] = $medId;      //药品id
-            $cart['cc_num'] = 1;
-            $cart->save();
-        }
-    }
 }

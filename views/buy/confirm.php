@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 \app\models\BuyStatus::$totalAmount = $medicine->money;
 \app\models\BuyStatus::$medId = $medId;
 date_default_timezone_set("Asia/Shanghai");
-\app\models\BuyStatus::$order = 'A'. date("YmdHis") . \app\models\Machine::$number;
+\app\models\BuyStatus::$order = 'A'. date("YmdHis") . $_SESSION['machine'];
 ?>
 <div class="customer-car-index">
     <p>

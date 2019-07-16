@@ -2,9 +2,9 @@
 
 namespace app\models;
 
+use app\models\VemStatus;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\VemStatus;
 
 /**
  * VemStatusSearch represents the model behind the search form of `app\models\VemStatus`.
@@ -61,6 +61,45 @@ class VemStatusSearch extends VemStatus
             'vem_id' => $this->vem_id,
             'm_id' => $this->m_id,
             'num' => $this->num,
+        ]);
+
+        return $dataProvider;
+    }
+
+    /**
+     * 搜索所有
+     * @param $machine
+     * @return ActiveDataProvider
+     */
+    public function searchAll($machine)
+    {
+        $query = VemStatus::find();
+
+        // add conditions that should always apply here
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        // grid filtering conditions
+        $query->andFilterWhere([
+            'vem_id' => $machine,
+        ]);
+
+        return $dataProvider;
+    }
+
+    public function searchByParams($machine, $param) {
+        $query = VemStatus::find();
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        // grid filtering conditions
+        $query->andFilterWhere([
+            'vem_id' => $machine,
+            'm_id' => $param,
         ]);
 
         return $dataProvider;
