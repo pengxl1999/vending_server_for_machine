@@ -233,8 +233,11 @@ class BuyController extends Controller
     /*
      * 支付成功
      */
-    public function actionSuccess() {
-        return $this->render('success');
+    public function actionSuccess($order, $medId) {
+        return $this->render('success', [
+            'order' => $order,
+            'medId' => $medId,
+        ]);
     }
 
 
