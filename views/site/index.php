@@ -46,12 +46,3 @@ $this->title = 'Vending Machine';
 
     </div>
 </div>
-<script>
-    /**
-     * 设置机器号
-     * @param machineId
-     */
-    function initialize(machineId) {
-        sessionStorage.setItem("machine", machineId);
-    }
-</script>

@@ -63,17 +63,24 @@ class SiteController extends Controller
 
     /**
      * Displays homepage.
-     *
+     * @param $machine
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($machine = 0)
     {
-        if(!Yii::$app->user->isGuest) {
-            if(!session_id())   session_start();
-            $username = Yii::$app->user->identity->username;
-            $user = User::findByUsername($username);
-            $_SESSION['userId'] = $user['id'];
+//        if(!Yii::$app->user->isGuest) {
+//            if(!session_id())   session_start();
+//            $username = Yii::$app->user->identity->username;
+//            $user = User::findByUsername($username);
+//            $_SESSION['userId'] = $user['id'];
+//        }
+        if(!session_id()) {
+            session_start();
         }
+        if($machine == 0) {
+            $this->redirect(['errorpage', 'message' => '配置错误！请联系管理员！']);
+        }
+        $_SESSION['machine'] = $machine;
         return $this->render('index');
     }
 
@@ -84,7 +91,7 @@ class SiteController extends Controller
 
     public function actionErrorpage($message) {
         return $this->render('errorpage', [
-            'message' => $message
+            'message' => $message,
         ]);
     }
 }
