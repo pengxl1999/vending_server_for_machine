@@ -127,7 +127,7 @@ class BuyController extends Controller
     }
 
     public function actionChecked($orderNumber) {
-        $order = CustomerPurchase::findOne(["cp_order" => $orderNumber]);
+        $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
         if($order->status == 5) {
 
         }
