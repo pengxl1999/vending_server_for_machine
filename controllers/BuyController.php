@@ -126,6 +126,25 @@ class BuyController extends Controller
         ]);
     }
 
+    public function actionChecked($orderNumber) {
+        $order = CustomerPurchase::findOne(["cp_order" => $orderNumber]);
+        if($order->status == 5) {
+
+        }
+        else if($order->status == 8) {
+
+        }
+
+        $medicine = Medicine::findOne(['m_id' => $order->m_id]);
+
+        return $this->render('checked', [
+            'orderNumber' => $orderNumber,
+            'medId' => $order->m_id,
+            'medicine' => $medicine,
+            'order' => $orderNumber,
+        ]);
+    }
+
     /**
      * 药品详细信息
      * @param $medId
