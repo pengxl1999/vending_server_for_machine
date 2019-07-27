@@ -133,6 +133,16 @@ class BuyController extends Controller
 //        else if($order->status == 8) {
 //
 //        }
+        $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
+        if($order == null) {
+            $order = new CustomerPurchase();
+            $order->cp_id = CustomerPurchase::getMaxId() + 1;
+            $order->cp_order = $orderNumber;
+            $order->m_id = $medId;
+            $order->status = 0;
+            $order->num = 1;
+            $order->save();
+        }
 
         $medicine = Medicine::findOne(['m_id' => $medId]);
 
@@ -140,6 +150,7 @@ class BuyController extends Controller
             'medId' => $medId,
             'medicine' => $medicine,
             'order' => $orderNumber,
+            'status' => $order->status,
         ]);
     }
 

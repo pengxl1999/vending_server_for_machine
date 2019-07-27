@@ -73,7 +73,7 @@ AppAsset::register($this);
     ?>
 
     <?php
-    if(Yii::$app->controller->getRoute() === 'buy/checked') {
+    if(Yii::$app->controller->getRoute() === 'buy/checked' && \app\models\BuyStatus::$status == 5) {
         echo '
             <div class="footer" style="z-index: 888; position: fixed; bottom: 0;height: 80px; width: 100%" >
                 <p class="pull-left" style="margin-left: 70px; margin-top:10px; color: #496f89; font-size: large">合计：￥' .
@@ -84,13 +84,23 @@ AppAsset::register($this);
             '</div>'
         ;
     }
-    else if(Yii::$app->controller->getRoute() === 'buy/checked'){
+    else if(Yii::$app->controller->getRoute() === 'buy/checked' && \app\models\BuyStatus::$status == 8){
         echo '
             <div class="footer" style="z-index: 888; position: fixed; bottom: 0;height: 80px; width: 100%" >
                 <p class="pull-left" style="margin-left: 70px; margin-top:10px; color: #496f89; font-size: large">合计：￥' .
             number_format(\app\models\BuyStatus::$totalAmount, 2) .
             '</p>
-                <p style="font-size: large; margin-right: 70px; margin-top: 10px" class="pull-right">等待审核</p>
+                <p style="font-size: large; margin-right: 70px; margin-top: 10px; color: #ff0000;" class="pull-right">审核未通过！</p>
+            </div>'
+        ;
+    }
+    else if(Yii::$app->controller->getRoute() === 'buy/checked') {
+        echo '
+            <div class="footer" style="z-index: 888; position: fixed; bottom: 0;height: 80px; width: 100%" >
+                <p class="pull-left" style="margin-left: 70px; margin-top:10px; color: #496f89; font-size: large">合计：￥' .
+            number_format(\app\models\BuyStatus::$totalAmount, 2) .
+            '</p>
+                <p style="font-size: large; margin-right: 70px; margin-top: 10px;" class="pull-right">等待审核</p>
             </div>'
         ;
     }

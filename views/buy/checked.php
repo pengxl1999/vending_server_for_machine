@@ -7,12 +7,14 @@ use yii\widgets\DetailView;
 /* @var $medicine app\models\Medicine */
 /* @var $medId */
 /* @var $order*/
+/* @var $status*/
 
 $this->title = '确认购买';
 $this->params['breadcrumbs'][] = $this->title;
 \app\models\BuyStatus::$totalAmount = $medicine->money;
 \app\models\BuyStatus::$medId = $medId;
 \app\models\BuyStatus::$order = $order;
+\app\models\BuyStatus::$status = $status;
 ?>
 
 <meta http-equiv="refresh" content="2" />

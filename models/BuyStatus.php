@@ -11,4 +11,5 @@ class BuyStatus
     public static $order;
     public static $hasRx = false;
     public static $isUploaded = false;
+    public static $status;
 }
