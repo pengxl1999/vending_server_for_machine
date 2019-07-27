@@ -128,12 +128,12 @@ class BuyController extends Controller
 
     public function actionChecked($orderNumber) {
         $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
-        if($order->status == 5) {
-
-        }
-        else if($order->status == 8) {
-
-        }
+//        if($order->status == 5) {
+//
+//        }
+//        else if($order->status == 8) {
+//
+//        }
 
         $medicine = Medicine::findOne(['m_id' => $order->m_id]);
 

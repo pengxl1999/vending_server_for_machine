@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="v0.8">
-      <change afterPath="$PROJECT_DIR$/views/buy/checked.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/controllers/BuyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BuyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/buy/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/buy/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
-              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+            <state relative-caret-position="237">
+              <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
               <folding>
                 <element signature="e#36#59#0#PHP" expanded="true" />
               </folding>
@@ -243,8 +239,8 @@
         <option value="$PROJECT_DIR$/controllers/PharmacistController.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/views/buy/checked.php" />
-        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
         <option value="$PROJECT_DIR$/views/buy/confirm.php" />
+        <option value="$PROJECT_DIR$/controllers/BuyController.php" />
       </list>
     </option>
   </component>
@@ -568,14 +564,7 @@
       <workItem from="1562835954015" duration="1678000" />
       <workItem from="1562846502782" duration="40369000" />
       <workItem from="1563522381192" duration="8421000" />
-      <workItem from="1564231800163" duration="5210000" />
-    </task>
-    <task id="LOCAL-00012" summary="alipay">
-      <created>1562507842729</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1562507842729</updated>
+      <workItem from="1564231800163" duration="5679000" />
     </task>
     <task id="LOCAL-00013" summary="alipay">
       <created>1562510419453</created>
@@ -913,11 +902,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563282743680</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="check">
+      <created>1564237518129</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1564237518130</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257668000" />
+    <option name="totallyTimeSpent" value="258137000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -932,11 +928,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.18656716" />
       <window_info id="Structure" order="1" sideWeight="0.5011211" side_tool="true" weight="0.20476772" />
       <window_info id="Favorites" order="2" sideWeight="0.5011211" side_tool="true" weight="0.22677262" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3275488" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -952,7 +948,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.11140725" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18976545" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -971,7 +967,8 @@
     <MESSAGE value="query result" />
     <MESSAGE value="v0.7" />
     <MESSAGE value="v0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.8" />
+    <MESSAGE value="check" />
+    <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/buy/result.php">
@@ -1316,8 +1313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/BuyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        <state relative-caret-position="237">
+          <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
           <folding>
             <element signature="e#36#59#0#PHP" expanded="true" />
           </folding>
