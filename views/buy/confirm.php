@@ -33,7 +33,7 @@ date_default_timezone_set("Asia/Shanghai");
                 <div>
                     <p>您的订单中包含处方药，请上传处方！</p>
                     <a class="btn btn-danger" onclick="window.android.getImageForBuying(
-                        \'' . \app\models\BuyStatus::$order . '\')">上传图片</a>
+                        \'' . \app\models\BuyStatus::$order . '\', \'' . \app\models\BuyStatus::$medId . '\')">上传图片</a>
                 </div>
                 ';
     }

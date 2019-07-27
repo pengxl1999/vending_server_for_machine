@@ -126,8 +126,7 @@ class BuyController extends Controller
         ]);
     }
 
-    public function actionChecked($orderNumber) {
-        $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
+    public function actionChecked($orderNumber, $medId) {
 //        if($order->status == 5) {
 //
 //        }
@@ -135,11 +134,10 @@ class BuyController extends Controller
 //
 //        }
 
-        $medicine = Medicine::findOne(['m_id' => $order->m_id]);
+        $medicine = Medicine::findOne(['m_id' => $medId]);
 
         return $this->render('checked', [
-            'orderNumber' => $orderNumber,
-            'medId' => $order->m_id,
+            'medId' => $medId,
             'medicine' => $medicine,
             'order' => $orderNumber,
         ]);
