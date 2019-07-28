@@ -126,6 +126,14 @@ class BuyController extends Controller
         ]);
     }
 
+    /**
+     * 等待审核结果
+     * @param $orderNumber
+     * @param $medId
+     * @return string
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
+     */
     public function actionChecked($orderNumber, $medId) {
 
         $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
@@ -138,7 +146,9 @@ class BuyController extends Controller
             $order->num = 1;
             $order->save(false);
         }
-
+        else if($order->status == 5) {
+            $order->delete();
+        }
         $medicine = Medicine::findOne(['m_id' => $medId]);
 
         return $this->render('checked', [
