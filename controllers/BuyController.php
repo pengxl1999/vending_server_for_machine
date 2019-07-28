@@ -130,12 +130,22 @@ class BuyController extends Controller
      * 等待审核结果
      * @param $orderNumber
      * @param $medId
+     * @param $passed
      * @return string
      * @throws \Throwable
      * @throws \yii\db\StaleObjectException
      */
-    public function actionChecked($orderNumber, $medId) {
+    public function actionChecked($orderNumber, $medId, $passed = false) {
 
+        if($passed) {
+            $medicine = Medicine::findOne(['m_id' => $medId]);
+            return $this->render('checked', [
+                'medId' => $medId,
+                'medicine' => $medicine,
+                'order' => $orderNumber,
+                'status' => 5,
+            ]);
+        }
         $order = CustomerPurchase::findOne(['cp_order' => $orderNumber]);
         if($order == null) {
             $order = new CustomerPurchase();
@@ -148,14 +158,15 @@ class BuyController extends Controller
         }
         else if($order->status == 5) {
             $order->delete();
+            $this->redirect(['checked', 'orderNumber' => $orderNumber, 'medId' => $medId, 'passed' => true]);
         }
-        $medicine = Medicine::findOne(['m_id' => $medId]);
 
+        $medicine = Medicine::findOne(['m_id' => $medId]);
         return $this->render('checked', [
-            'medId' => $medId,
-            'medicine' => $medicine,
-            'order' => $orderNumber,
-            'status' => $order->status,
+                'medId' => $medId,
+                'medicine' => $medicine,
+                'order' => $orderNumber,
+                'status' => $order->status,
         ]);
     }
 
