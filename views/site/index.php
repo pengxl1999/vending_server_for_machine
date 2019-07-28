@@ -37,7 +37,7 @@ $this->title = 'Vending Machine';
 
                 <p>TO Group of Jilin University是吉林大学计算机科学与技术学院无线传感器网络实验室物联网设备小组</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">联系我们 &raquo;</a></p>
             </div>
         </div>
 
