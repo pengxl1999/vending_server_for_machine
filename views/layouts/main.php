@@ -32,7 +32,7 @@ AppAsset::register($this);
     NavBar::begin([
         //'brandLabel' => Yii::$app->name,
         'brandLabel' => '语音智能药品售货机',
-        'brandUrl' => ['site/index', 'machine' => $_SESSION['machine']],
+        'brandUrl' => '', //['site/index', 'machine' => $_SESSION['machine']],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
