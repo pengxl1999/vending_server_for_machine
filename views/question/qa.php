@@ -1,5 +1,5 @@
 <?php
-    echo 'haveddd'
+    echo 'haveddd';
 ?>
 
 <script>
