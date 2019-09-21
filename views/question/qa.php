@@ -1,9 +1,10 @@
 <?php
+    echo 'haveddd'
 ?>
 
 <script>
     function haveFun() {
-        <?php echo 'haveFun' ?>
+        document.write("11111");
         window.android.haha();
     }
 </script>
