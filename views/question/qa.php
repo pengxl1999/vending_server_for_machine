@@ -12,5 +12,6 @@
         var form = document.getElementById('search_form');
         var med = document.getElementById('search_med');
         med.value = "haahh";
+        window.android.haha();
     }
 </script>
