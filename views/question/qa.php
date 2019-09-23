@@ -13,15 +13,15 @@
 
 
 <script>
-    function haveFun(arg1, arg2) {
-        window.android.setInformation(arg1, arg2);
-    }
-    
     function getInformation(arg) {
-        var form = document.getElementById('info_form');
-        var med = document.getElementById('info_search');
+        let form = document.getElementById('info_form');
+        let med = document.getElementById('info_search');
         med.value = arg;
         form.submit();
     }
-    
+
+    function haveFun(arg1, arg2) {
+        window.android.setInformation(arg1, arg2);
+    }
+
 </script>
