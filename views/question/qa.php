@@ -10,6 +10,7 @@
     <input type="submit" value="搜索" class="btn btn-primary" style="font-size:x-large; margin-left: 15px" />
 </form>
 
+
 <script>
     function haveFun(arg1, arg2) {
         window.android.setInformation(arg1, arg2);
