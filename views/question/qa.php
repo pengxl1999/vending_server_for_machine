@@ -2,7 +2,7 @@
 
     /* @var $result */
     if($result != null)
-        echo "<script type=text/javascript>haveFun('" . $result->info_result ."')</script>";
+        echo "<script type=text/javascript>haveFun('" . $result->info_result ."', '" . $result->info_voice . "')</script>";
 ?>
 
 <form id='search_form' action="./index.php?r=question/qa" method="post">
@@ -11,8 +11,8 @@
 </form>
 
 <script>
-    function haveFun(arg) {
-        window.android.setInformation(arg);
+    function haveFun(arg1, arg2) {
+        window.android.setInformation(arg1, arg2);
     }
     
     function getInformation(arg) {

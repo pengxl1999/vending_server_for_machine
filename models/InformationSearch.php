@@ -18,7 +18,7 @@ class InformationSearch extends Information
     {
         return [
             [['info_id'], 'integer'],
-            [['info_question', 'info_result'], 'safe'],
+            [['info_question', 'info_result', 'info_voice'], 'safe'],
         ];
     }
 
@@ -62,7 +62,8 @@ class InformationSearch extends Information
         ]);
 
         $query->andFilterWhere(['like', 'info_question', $this->info_question])
-            ->andFilterWhere(['like', 'info_result', $this->info_result]);
+            ->andFilterWhere(['like', 'info_result', $this->info_result])
+            ->andFilterWhere(['like', 'info_voice', $this->info_voice]);
 
         return $dataProvider;
     }

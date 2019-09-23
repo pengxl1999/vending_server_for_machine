@@ -29,6 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'info_id',
             'info_question',
             'info_result',
+            'info_voice',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -10,6 +10,7 @@ use Yii;
  * @property int $info_id
  * @property string $info_question
  * @property string $info_result
+ * @property string $info_voice
  */
 class Information extends \yii\db\ActiveRecord
 {
@@ -29,7 +30,7 @@ class Information extends \yii\db\ActiveRecord
         return [
             [['info_id'], 'required'],
             [['info_id'], 'integer'],
-            [['info_question', 'info_result'], 'string', 'max' => 255],
+            [['info_question', 'info_result', 'info_voice'], 'string', 'max' => 255],
             [['info_id'], 'unique'],
         ];
     }
@@ -43,6 +44,7 @@ class Information extends \yii\db\ActiveRecord
             'info_id' => 'Info ID',
             'info_question' => 'Info Question',
             'info_result' => 'Info Result',
+            'info_voice' => 'Info Voice',
         ];
     }
 }
