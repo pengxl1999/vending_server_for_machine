@@ -5,7 +5,10 @@
 
 <script type="text/javascript">
 
-    function getInformation(arg) {
+    function getInformation(arg = null) {
+        if(arg == null) {
+            return;
+        }
         var form = document.getElementById('search_form');
         var info = document.getElementById('info_search');
         info.value = arg;
