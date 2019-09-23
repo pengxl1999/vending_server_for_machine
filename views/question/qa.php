@@ -23,7 +23,5 @@
 /* @var $result */
 /* @var $voice */
 /* @var $flag */
-if($flag) {
     echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
-}
 ?>
