@@ -5,10 +5,7 @@
 
 <script type="text/javascript">
 
-    function getInformation(arg = null) {
-        if(arg == null) {
-            return;
-        }
+    function getInformation(arg) {
         var form = document.getElementById('search_form');
         var info = document.getElementById('info_search');
         info.value = arg;
@@ -27,6 +24,6 @@
 /* @var $voice */
 /* @var $flag */
 if($flag) {
-    //echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
+    echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
 }
 ?>
