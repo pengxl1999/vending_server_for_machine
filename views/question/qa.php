@@ -1,5 +1,5 @@
 <form id='search_form' action="./index.php?r=question/qa" method="post">
-    <input type="text" id='info_search' placeholder="搜索药品" style="font-size: x-large" value=""/>
+    <input type="text" name='info_search' id='info_search' placeholder="搜索药品" style="font-size: x-large" value=""/>
     <input type="submit" value="搜索" class="btn btn-primary" style="font-size:x-large; margin-left: 15px" />
 </form>
 
@@ -20,8 +20,5 @@
 
 <?php
 
-/* @var $result */
-/* @var $voice */
-/* @var $flag */
-    echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
+echo "<script type=text/javascript>haveFun('" . $_SESSION['result'] . "', '" . $_SESSION['voice']  . " ')</script>";
 ?>
