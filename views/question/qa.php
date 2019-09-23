@@ -7,11 +7,11 @@
 <script type="text/javascript">
     function getInformation(arg) {
         var inputData = arg;
-        let result = <?
+        let result = <?php
             $input = "<script type=text/javascript>document.write(inputData)</script>";
             $information = \app\models\Information::findOne(['info_question' => $input]);
             echo $information == null ? "" : $information->info_result ?>;
-        let voice = <?
+        let voice = <?php
             $input = "<script type=text/javascript>document.write(inputData)</script>";
             $information = \app\models\Information::findOne(['info_question' => $input]);
             echo $information == null ? "" : $information->info_voice ?>;
