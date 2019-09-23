@@ -14,9 +14,10 @@
 
 <script>
     function getInformation(arg) {
-        let form = document.getElementById('info_form');
-        let med = document.getElementById('info_search');
-        med.value = "发热";
+        window.android.haha();
+        var form = document.getElementById('info_form');
+        var input = document.getElementById('info_search');
+        input.value = arg;
         form.submit();
     }
 
