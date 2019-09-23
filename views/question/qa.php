@@ -16,11 +16,12 @@
     }
     
     function getInformation(arg) {
-        var form = document.getElementById('search_form');
-        var med = document.getElementById('search_info');
-        med.value = arg;
         window.android.haha();
-        form.submit();
+        //var form = document.getElementById('search_form');
+        //var med = document.getElementById('search_info');
+        //med.value = arg;
+
+        //form.submit();
     }
     
 </script>
