@@ -16,7 +16,10 @@
 
 <script type="text/javascript">
 
-    function getInformation(arg = "None") {
+    function getInformation(arg) {
+        if(arg == null) {
+            return;
+        }
         var form = document.getElementById('search_form');
         var med = document.getElementById('info_search');
         med.value = arg;

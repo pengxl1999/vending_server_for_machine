@@ -55,7 +55,6 @@ class QuestionController extends Controller
         $voice = "";
         $flag = false;
         if(isset($post['info_search'])) {       //判断是否搜索
-
             $search = $post['info_search'];
             $information = Information::findOne(['info_question' => $search]);
             if($information != null) {
