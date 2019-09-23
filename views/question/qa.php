@@ -21,5 +21,7 @@
 
 <?php
 
-echo "<script type=text/javascript>haveFun('" . $_SESSION['result'] . "', '" . $_SESSION['voice']  . " ')</script>";
+/* @var $result */
+/* @var $voice */
+echo "<script type=text/javascript>haveFun('" . $result . "', '" . $voice  . " ')</script>";
 ?>

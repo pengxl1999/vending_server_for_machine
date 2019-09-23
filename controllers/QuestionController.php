@@ -50,17 +50,20 @@ class QuestionController extends Controller
     }
 
     public function actionQa() {
-        $_SESSION['result'] = "";
-        $_SESSION['voice'] = "";
+        $result = "";
+        $voice = "";
         $post = Yii::$app->request->post();
         if(isset($post['info_search'])) {       //判断是否搜索
             $search = $post['info_search'];
             $information = Information::findOne(['info_question' => $search]);
             if($information != null) {
-                $_SESSION['result'] = $information->info_result;
-                $_SESSION['voice']  = $information->info_voice;
+                $result = $information->info_result;
+                $voice  = $information->info_voice;
             }
         }
-        return $this->render('qa');
+        return $this->render('qa', [
+            'result' => $result,
+            'voice' => $voice,
+        ]);
     }
 }
