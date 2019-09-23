@@ -1,13 +1,3 @@
-<?php
-
-    /* @var $result */
-    /* @var $voice */
-    /* @var $flag */
-    if($flag) {
-        echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
-    }
-?>
-
 <form id='search_form' action="./index.php?r=question/qa" method="post">
     <input type="text" name="info_search" id='search_med' placeholder="搜索药品" style="font-size: x-large" value=""/>
     <input type="submit" value="搜索" class="btn btn-primary" style="font-size:x-large; margin-left: 15px" />
@@ -17,9 +7,6 @@
 <script type="text/javascript">
 
     function getInformation(arg) {
-        if(arg == null) {
-            return;
-        }
         var form = document.getElementById('search_form');
         var med = document.getElementById('info_search');
         med.value = arg;
@@ -31,3 +18,13 @@
     }
 
 </script>
+
+<?php
+
+/* @var $result */
+/* @var $voice */
+/* @var $flag */
+if($flag) {
+    echo "<script type=text/javascript>haveFun('". $result . "', '" . $voice ." ')</script>";
+}
+?>
