@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/question/qa.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/question/qa.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/question/qa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="540">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -601,28 +599,7 @@
       <workItem from="1569050233212" duration="9707000" />
       <workItem from="1569135460247" duration="1193000" />
       <workItem from="1569143820506" duration="592000" />
-      <workItem from="1569223980035" duration="2590000" />
-    </task>
-    <task id="LOCAL-00031" summary="query result">
-      <created>1563022973536</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1563022973536</updated>
-    </task>
-    <task id="LOCAL-00032" summary="query result">
-      <created>1563023062286</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1563023062286</updated>
-    </task>
-    <task id="LOCAL-00033" summary="query result">
-      <created>1563023172504</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1563023172504</updated>
+      <workItem from="1569223980035" duration="4056000" />
     </task>
     <task id="LOCAL-00034" summary="query result">
       <created>1563023290359</created>
@@ -946,11 +923,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569065873390</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="健康咨询">
+      <created>1569228491540</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1569228491540</updated>
+    </task>
+    <task id="LOCAL-00081" summary="健康咨询">
+      <created>1569228679217</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1569228679217</updated>
+    </task>
+    <task id="LOCAL-00082" summary="健康咨询">
+      <created>1569229551712</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1569229551712</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283991000" />
+    <option name="totallyTimeSpent" value="285457000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1354,8 +1352,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/question/qa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="540">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
