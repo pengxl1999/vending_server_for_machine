@@ -5,17 +5,12 @@
 
 
 <script type="text/javascript">
+    var aaa;
     function getInformation(arg) {
-        var inputData = arg;
-        let result = <?php
-            $input = "<script type=text/javascript>document.write(inputData)</script>";
-            $information = \app\models\Information::findOne(['info_question' => $input]);
-            echo $information == null ? "" : $information->info_result; ?>;
-        let voice = <?php
-            $input = "<script type=text/javascript>document.write(inputData)</script>";
-            $information = \app\models\Information::findOne(['info_question' => $input]);
-            echo $information == null ? "" : $information->info_voice; ?>;
+        aaa = arg;
+        var result = <? echo "<script type=text/javascript>document.write(aaa)</script>";?>;
+        var voice = <? echo "<script type=text/javascript>document.write(aaa)</script>";?>;
         window.android.setInformation(result, voice);
     }
-
 </script>
+
