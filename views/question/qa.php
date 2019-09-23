@@ -1,19 +1,21 @@
 <?php
 
-    /* @var $result */
-    /* @var $voice */
-    if($result !== 'N')
-        echo "<script type=text/javascript>haveFun('" . $result ."', '" . $voice . "')</script>";
+
 ?>
 
 
-<script>
+<script type="text/javascript">
     function getInformation(arg) {
-        window.android.haha(arg);
-    }
-
-    function haveFun(arg1, arg2) {
-        window.android.setInformation(arg1, arg2);
+        var inputData = arg;
+        let result = <?
+            $input = "<script type=text/javascript>document.write(inputData)</script>";
+            $information = \app\models\Information::findOne(['info_question' => $input]);
+            echo $information == null ? "" : $information->info_result ?>;
+        let voice = <?
+            $input = "<script type=text/javascript>document.write(inputData)</script>";
+            $information = \app\models\Information::findOne(['info_question' => $input]);
+            echo $information == null ? "" : $information->info_voice ?>;
+        window.android.setInformation(result, voice);
     }
 
 </script>
