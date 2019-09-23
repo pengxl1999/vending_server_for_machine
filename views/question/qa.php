@@ -10,11 +10,11 @@
         let result = <?php
             $input = "<script type=text/javascript>document.write(inputData)</script>";
             $information = \app\models\Information::findOne(['info_question' => $input]);
-            echo $information == null ? "" : $information->info_result ?>;
+            echo $information == null ? "" : $information->info_result; ?>;
         let voice = <?php
             $input = "<script type=text/javascript>document.write(inputData)</script>";
             $information = \app\models\Information::findOne(['info_question' => $input]);
-            echo $information == null ? "" : $information->info_voice ?>;
+            echo $information == null ? "" : $information->info_voice; ?>;
         window.android.setInformation(result, voice);
     }
 
