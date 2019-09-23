@@ -50,6 +50,23 @@ class QuestionController extends Controller
     }
 
     public function actionQa() {
-        return $this->render('qa');
+        $post = Yii::$app->request->post();
+        $result = "";
+        $voice = "";
+        $flag = false;
+        if(isset($post['info_search'])) {       //判断是否搜索
+            $flag = true;
+            $search = $post['info_search'];
+            $information = Information::findOne(['info_question' => $search]);
+            if($information != null) {
+                $result = $information->info_result;
+                $voice = $information->info_voice;
+            }
+        }
+        return $this->render('qa', [
+            'result' => $result,
+            'voice' => $voice,
+            'flag' => $flag,
+        ]);
     }
 }
