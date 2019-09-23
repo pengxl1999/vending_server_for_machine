@@ -4,6 +4,10 @@
 namespace app\controllers;
 
 
+use app\models\Information;
+use app\models\InformationSearch;
+use app\models\MedicineSearch;
+use Yii;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 
@@ -46,6 +50,14 @@ class QuestionController extends Controller
     }
 
     public function actionQa() {
-        return $this->render('qa');
+        $post = Yii::$app->request->post();
+        $result = null;
+        if(isset($post['search_info'])) {       //判断是否搜索
+            $search = $post['search_info'];
+            $result = Information::findOne(['info_question' => $search]);
+        }
+        return $this->render('qa', [
+            'result' => $result
+        ]);
     }
 }
