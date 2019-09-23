@@ -19,7 +19,7 @@
     function getInformation(arg) {
         var form = document.getElementById('info_form');
         var med = document.getElementById('info_search');
-        med.value = arg;
+        med.value = "发热";
         form.submit();
     }
     
