@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c26af8a-ea14-46e8-b49b-092b940b5c83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/question/qa.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/question/qa.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/buy/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="25" column="11" selection-start-line="24" selection-start-column="4" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="285">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#7#37#0#PHP" expanded="true" />
               </folding>
@@ -99,10 +100,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/question/qa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="90">
+              <caret line="3" column="127" selection-start-line="3" selection-start-column="127" selection-end-line="3" selection-end-column="127" />
               <folding>
+                <element signature="e#143#169#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#!!top" expanded="true" />
+                <element signature="e#360#404#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
-              <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
               <folding>
                 <element signature="e#37#64#0#PHP" expanded="true" />
               </folding>
@@ -599,35 +602,7 @@
       <workItem from="1569050233212" duration="9707000" />
       <workItem from="1569135460247" duration="1193000" />
       <workItem from="1569143820506" duration="592000" />
-      <workItem from="1569223980035" duration="14087000" />
-    </task>
-    <task id="LOCAL-00055" summary="query result">
-      <created>1563109023913</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1563109023913</updated>
-    </task>
-    <task id="LOCAL-00056" summary="query result">
-      <created>1563111311677</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1563111311677</updated>
-    </task>
-    <task id="LOCAL-00057" summary="v0.7">
-      <created>1563267928598</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1563267928598</updated>
-    </task>
-    <task id="LOCAL-00058" summary="v0.7">
-      <created>1563269223581</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1563269223581</updated>
+      <workItem from="1569223980035" duration="15262000" />
     </task>
     <task id="LOCAL-00059" summary="v0.8">
       <created>1563273251112</created>
@@ -944,11 +919,39 @@
       <option name="project" value="LOCAL" />
       <updated>1569241367288</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="健康咨询">
+      <created>1569241660683</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1569241660684</updated>
+    </task>
+    <task id="LOCAL-00105" summary="健康咨询">
+      <created>1569241784798</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1569241784798</updated>
+    </task>
+    <task id="LOCAL-00106" summary="健康咨询">
+      <created>1569241838513</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1569241838514</updated>
+    </task>
+    <task id="LOCAL-00107" summary="健康咨询">
+      <created>1569242577241</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1569242577241</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295488000" />
+    <option name="totallyTimeSpent" value="296663000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -963,7 +966,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.2238806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887893" visible="true" weight="0.2238806" />
       <window_info id="Structure" order="1" sideWeight="0.5011211" side_tool="true" weight="0.20476772" />
       <window_info id="Favorites" order="2" sideWeight="0.5011211" side_tool="true" weight="0.22677262" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1292,13 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/MedicineTypeSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/9a3c8fdd/js/toolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1339,18 +1335,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/buy/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="25" column="11" selection-start-line="24" selection-start-column="4" selection-end-line="28" selection-end-column="11" />
+        <state relative-caret-position="285">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#7#37#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/MedicineTypeSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
-          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding>
             <element signature="e#37#64#0#PHP" expanded="true" />
           </folding>
@@ -1359,10 +1362,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/question/qa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="90">
+          <caret line="3" column="127" selection-start-line="3" selection-start-column="127" selection-end-line="3" selection-end-column="127" />
           <folding>
+            <element signature="e#143#169#0#HTML" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#!!top" expanded="true" />
+            <element signature="e#360#404#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
