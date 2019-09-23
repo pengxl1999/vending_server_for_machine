@@ -1,8 +1,9 @@
 <?php
 
     /* @var $result */
-    if($result != null)
-        echo "<script type=text/javascript>haveFun('" . $result->info_result ."', '" . $result->info_voice . "')</script>";
+    /* @var $voice */
+    if($result !== 'N')
+        echo "<script type=text/javascript>haveFun('" . $result ."', '" . $voice . "')</script>";
 ?>
 
 <form id="info_form" action="./index.php?r=question/qa" method="post">
@@ -19,7 +20,7 @@
     function getInformation(arg) {
         var form = document.getElementById('info_form');
         var med = document.getElementById('info_search');
-        med.value = "发热";
+        med.value = arg;
         form.submit();
     }
     
