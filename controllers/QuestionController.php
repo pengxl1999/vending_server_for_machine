@@ -52,8 +52,8 @@ class QuestionController extends Controller
     public function actionQa() {
         $post = Yii::$app->request->post();
         $result = null;
-        if(isset($post['search_info'])) {       //判断是否搜索
-            $search = $post['search_info'];
+        if(isset($post['info_search'])) {       //判断是否搜索
+            $search = $post['info_search'];
             $result = Information::findOne(['info_question' => $search]);
         }
         return $this->render('qa', [
